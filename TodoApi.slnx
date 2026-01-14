@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/TodoApi.IntegrationTests/TodoApi.IntegrationTests.csproj" />
+    <Project Path="tests/TodoApi.UnitTests/TodoApi.UnitTests.csproj" />
+  </Folder>
+  <Project Path="TodoApi.csproj" />
+</Solution>

@@ -6,6 +6,9 @@ using MediatR;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using OpenTelemetry.Metrics;
+using OpenTelemetry.Resources;
+using OpenTelemetry.Trace;
 using Serilog;
 using TodoApi.Application.Abstractions;
 using TodoApi.Application.Common.Behaviors;
@@ -181,6 +184,44 @@ try
             builder.Configuration.GetConnectionString("Redis") ?? "localhost:6379",
             name: "redis");
 
+    // OpenTelemetry - Tracing & Metrics (enterprise observability)
+    var otelSection = builder.Configuration.GetSection("OpenTelemetry");
+    var otelServiceName = otelSection["ServiceName"] ?? "TodoApi";
+    var otelOtlpEndpoint = otelSection["OtlpEndpoint"];
+    var otelEnableConsoleExporter = string.Equals(otelSection["ConsoleExporterEnabled"], "true", StringComparison.OrdinalIgnoreCase);
+
+    builder.Services.AddOpenTelemetry()
+        .ConfigureResource(r => r.AddService(serviceName: otelServiceName))
+        .WithTracing(tracing =>
+        {
+            tracing
+                .AddAspNetCoreInstrumentation()
+                .AddHttpClientInstrumentation()
+                .AddEntityFrameworkCoreInstrumentation();
+
+            if (!string.IsNullOrWhiteSpace(otelOtlpEndpoint))
+            {
+                tracing.AddOtlpExporter(o => o.Endpoint = new Uri(otelOtlpEndpoint));
+            }
+
+            if (otelEnableConsoleExporter)
+            {
+                tracing.AddConsoleExporter();
+            }
+        })
+        .WithMetrics(metrics =>
+        {
+            metrics
+                .AddAspNetCoreInstrumentation()
+                .AddHttpClientInstrumentation()
+                .AddRuntimeInstrumentation();
+
+            if (!string.IsNullOrWhiteSpace(otelOtlpEndpoint))
+            {
+                metrics.AddOtlpExporter(o => o.Endpoint = new Uri(otelOtlpEndpoint));
+            }
+        });
+
     // Authentication
     builder.Services.AddHttpContextAccessor();
     builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
@@ -225,7 +266,10 @@ try
         .WithTags("Health")
         ;
 
-    app.UseHttpsRedirection();
+    if (!app.Environment.IsEnvironment("Testing"))
+    {
+        app.UseHttpsRedirection();
+    }
     app.UseCors("AllowAll");
 
     // Logging middleware
@@ -236,16 +280,19 @@ try
     app.MapControllers();
 
     // Apply migrations on startup
-    try
+    if (!app.Environment.IsEnvironment("Testing"))
     {
-        using var scope = app.Services.CreateScope();
-        var db = scope.ServiceProvider.GetRequiredService<TodoContext>();
-        await db.Database.MigrateAsync();
-        Log.Information("✅ Database initialized successfully");
-    }
-    catch (Exception ex)
-    {
-        Log.Warning(ex, "⚠️ Could not create/initialize database");
+        try
+        {
+            using var scope = app.Services.CreateScope();
+            var db = scope.ServiceProvider.GetRequiredService<TodoContext>();
+            await db.Database.MigrateAsync();
+            Log.Information("✅ Database initialized successfully");
+        }
+        catch (Exception ex)
+        {
+            Log.Warning(ex, "⚠️ Could not create/initialize database");
+        }
     }
 
     Log.Information("🚀 Enterprise Todo API started successfully");
@@ -258,6 +305,10 @@ catch (Exception ex)
 finally
 {
     Log.CloseAndFlush();
+}
+
+public partial class Program
+{
 }
 
 public partial class Program { }
