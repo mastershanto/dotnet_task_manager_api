@@ -196,8 +196,7 @@ try
         {
             tracing
                 .AddAspNetCoreInstrumentation()
-                .AddHttpClientInstrumentation()
-                .AddEntityFrameworkCoreInstrumentation();
+            .AddHttpClientInstrumentation();
 
             if (!string.IsNullOrWhiteSpace(otelOtlpEndpoint))
             {
