@@ -235,8 +235,9 @@ try
     builder.Services.AddScoped<IProjectAccessService, ProjectAccessService>();
     builder.Services.AddScoped<ITaskHistoryRepository, TaskHistoryRepository>();
 
-    // Application Services (legacy - will be replaced by CQRS handlers)
-    builder.Services.AddScoped<ITaskService, TaskService>();
+    // NOTE: Legacy service layer - use CQRS handlers instead
+    // MediatR handlers in Application/Features/Tasks will handle all business logic
+    // This service may be kept for backward compatibility but new features should use handlers
 
     var app = builder.Build();
 

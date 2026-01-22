@@ -20,6 +20,20 @@ public class PaginatedResponse<T>
     public bool HasNextPage => PageNumber < TotalPages;
 }
 
+/// <summary>
+/// Common query parameters for pagination and filtering
+/// </summary>
+public class QueryParams
+{
+    public int PageNumber { get; set; } = 1;
+    public int PageSize { get; set; } = 10;
+    public string? SortBy { get; set; }
+    public bool SortDescending { get; set; } = false;
+    public string? SearchTerm { get; set; }
+    public int? Status { get; set; }
+    public int? Priority { get; set; }
+}
+
 public class CreateTaskDto
 {
     public string Title { get; set; } = null!;
@@ -208,13 +222,17 @@ public class UserDto
     public DateTime? LastLoginAt { get; set; }
 }
 
-public class QueryParams
+// Backward compatibility - redirect to new presentation DTOs
+using TodoApi.Presentation.Common;
+using TodoApi.Presentation.DTOs;
+
+// For backward compatibility with existing code using old DTOs
+public static class DtoAliases
 {
-    public int PageNumber { get; set; } = 1;
-    public int PageSize { get; set; } = 20;
-    public string? SortBy { get; set; }
-    public bool SortDescending { get; set; }
-    public string? SearchTerm { get; set; }
-    public int? Status { get; set; }
-    public int? Priority { get; set; }
+    public static ApiResponse<T> CreateApiResponse<T>(bool success, string? message, T? data)
+        => new() { Success = success, Message = message, Data = data };
+
+    public static PaginatedResponse<T> CreatePaginatedResponse<T>(
+        List<T> items, int totalCount, int pageNumber, int pageSize)
+        => new() { Items = items, TotalCount = totalCount, PageNumber = pageNumber, PageSize = pageSize };
 }

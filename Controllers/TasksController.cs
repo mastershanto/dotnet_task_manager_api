@@ -1,23 +1,32 @@
+using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using TodoApi.DTOs;
+using TodoApi.Application.Features.Tasks.Commands;
+using TodoApi.Application.Features.Tasks.Queries;
+using TodoApi.Domain.Entities;
+using TodoApi.Presentation.Common;
+using TodoApi.Presentation.DTOs;
 using TodoApi.Services;
 
 namespace TodoApi.Controllers;
 
+/// <summary>
+/// Tasks API controller - Enterprise clean architecture with CQRS pattern
+/// Delegates all business logic to MediatR handlers through commands and queries
+/// </summary>
 [ApiController]
 [Route("api/[controller]")]
 [Produces("application/json")]
 [Authorize]
 public class TasksController : ControllerBase
 {
-    private readonly ITaskService _taskService;
+    private readonly IMediator _mediator;
     private readonly ICurrentUserService _currentUser;
     private readonly ILogger<TasksController> _logger;
 
-    public TasksController(ITaskService taskService, ICurrentUserService currentUser, ILogger<TasksController> logger)
+    public TasksController(IMediator mediator, ICurrentUserService currentUser, ILogger<TasksController> logger)
     {
-        _taskService = taskService;
+        _mediator = mediator;
         _currentUser = currentUser;
         _logger = logger;
     }
@@ -39,76 +48,57 @@ public class TasksController : ControllerBase
         try
         {
             var userId = GetUserIdOrThrow();
-            var task = await _taskService.GetTaskByIdAsync(taskId, userId);
+            var query = new GetTaskByIdQuery(taskId, userId);
+            var result = await _mediator.Send(query);
+
+            if (!result.IsSuccess)
+                return NotFound(new ApiResponse<object> { Success = false, Message = result.Error });
+
             return Ok(new ApiResponse<TaskDto>
             {
                 Success = true,
-                Message = "Task retrieved successfully",
-                Data = task
+                Message = result.Message,
+                Data = result.Value
             });
         }
-        catch (KeyNotFoundException ex)
+        catch (Exception ex)
         {
-            _logger.LogWarning("Task {TaskId} not found", taskId);
-            return NotFound(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error retrieving task {TaskId}", taskId);
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 
     /// <summary>
-    /// Get all tasks in a project with pagination and filtering
+    /// Get all tasks in a project with pagination
     /// </summary>
     [HttpGet("project/{projectId}")]
-    public async Task<ActionResult<ApiResponse<PaginatedResponse<TaskDto>>>> GetProjectTasks(
+    public async Task<ActionResult<ApiResponse<PaginatedResponse<TaskSummaryDto>>>> GetProjectTasks(
         int projectId,
         [FromQuery] int pageNumber = 1,
         [FromQuery] int pageSize = 20,
         [FromQuery] string? sortBy = null,
-        [FromQuery] bool sortDescending = false,
-        [FromQuery] string? searchTerm = null,
-        [FromQuery] int? status = null,
-        [FromQuery] int? priority = null)
+        [FromQuery] bool sortDescending = false)
     {
         try
         {
             var userId = GetUserIdOrThrow();
-            var queryParams = new QueryParams
-            {
-                PageNumber = pageNumber,
-                PageSize = pageSize,
-                SortBy = sortBy,
-                SortDescending = sortDescending,
-                SearchTerm = searchTerm,
-                Status = status,
-                Priority = priority
-            };
+            var query = new GetProjectTasksQuery(projectId, userId, pageNumber, pageSize, sortBy, sortDescending);
+            var result = await _mediator.Send(query);
 
-            var tasks = await _taskService.GetTasksAsync(projectId, userId, queryParams);
-            return Ok(new ApiResponse<PaginatedResponse<TaskDto>>
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
+            return Ok(new ApiResponse<PaginatedResponse<TaskSummaryDto>>
             {
                 Success = true,
-                Message = "Tasks retrieved successfully",
-                Data = tasks
+                Message = result.Message,
+                Data = result.Value
             });
         }
-        catch (UnauthorizedAccessException ex)
+        catch (Exception ex)
         {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error retrieving project tasks for project {ProjectId}", projectId);
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 
@@ -116,24 +106,31 @@ public class TasksController : ControllerBase
     /// Get all tasks assigned to the current user
     /// </summary>
     [HttpGet("assigned-to-me")]
-    public async Task<ActionResult<ApiResponse<List<TaskDto>>>> GetMyTasks(
+    public async Task<ActionResult<ApiResponse<PaginatedResponse<TaskSummaryDto>>>> GetMyTasks(
         [FromQuery] int pageNumber = 1,
         [FromQuery] int pageSize = 20)
     {
-        var userId = GetUserIdOrThrow();
-        var queryParams = new QueryParams
+        try
         {
-            PageNumber = pageNumber,
-            PageSize = pageSize
-        };
+            var userId = GetUserIdOrThrow();
+            var query = new GetUserTasksQuery(userId, pageNumber, pageSize);
+            var result = await _mediator.Send(query);
 
-        var tasks = await _taskService.GetUserTasksAsync(userId, queryParams);
-        return Ok(new ApiResponse<List<TaskDto>>
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
+            return Ok(new ApiResponse<PaginatedResponse<TaskSummaryDto>>
+            {
+                Success = true,
+                Message = result.Message,
+                Data = result.Value
+            });
+        }
+        catch (Exception ex)
         {
-            Success = true,
-            Message = "Your tasks retrieved successfully",
-            Data = tasks
-        });
+            _logger.LogError(ex, "Error retrieving user tasks");
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
+        }
     }
 
     /// <summary>
@@ -145,29 +142,36 @@ public class TasksController : ControllerBase
         try
         {
             var userId = GetUserIdOrThrow();
-            var task = await _taskService.CreateTaskAsync(dto, userId);
-            return CreatedAtAction(nameof(GetTask), new { taskId = task.Id }, new ApiResponse<TaskDto>
+            var command = new CreateTaskCommand(
+                dto.Title,
+                dto.Description,
+                dto.ProjectId,
+                dto.AssigneeId,
+                dto.Priority,
+                dto.DueDate,
+                dto.StartDate,
+                dto.EstimatedHours,
+                dto.Tags,
+                dto.ParentTaskId,
+                userId
+            );
+
+            var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
+            return CreatedAtAction(nameof(GetTask), new { taskId = result.Value?.Id }, new ApiResponse<TaskDto>
             {
                 Success = true,
-                Message = "Task created successfully",
-                Data = task
+                Message = result.Message,
+                Data = result.Value
             });
         }
-        catch (KeyNotFoundException ex)
+        catch (Exception ex)
         {
-            return BadRequest(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error creating task");
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 
@@ -180,29 +184,39 @@ public class TasksController : ControllerBase
         try
         {
             var userId = GetUserIdOrThrow();
-            var task = await _taskService.UpdateTaskAsync(taskId, dto, userId);
+            var command = new UpdateTaskCommand(
+                taskId,
+                dto.Title,
+                dto.Description,
+                dto.AssigneeId,
+                dto.Status,
+                dto.Priority,
+                dto.Progress,
+                dto.DueDate,
+                dto.EstimatedHours,
+                dto.ActualHours,
+                dto.Tags,
+                dto.IsBlocked,
+                dto.BlockedReason,
+                userId
+            );
+
+            var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
             return Ok(new ApiResponse<TaskDto>
             {
                 Success = true,
-                Message = "Task updated successfully",
-                Data = task
+                Message = result.Message,
+                Data = result.Value
             });
         }
-        catch (KeyNotFoundException ex)
+        catch (Exception ex)
         {
-            return NotFound(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error updating task {TaskId}", taskId);
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 
@@ -215,28 +229,22 @@ public class TasksController : ControllerBase
         try
         {
             var userId = GetUserIdOrThrow();
-            await _taskService.DeleteTaskAsync(taskId, userId);
+            var command = new DeleteTaskCommand(taskId, userId);
+            var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
             return Ok(new ApiResponse<object>
             {
                 Success = true,
-                Message = "Task deleted successfully"
+                Message = result.Message
             });
         }
-        catch (KeyNotFoundException ex)
+        catch (Exception ex)
         {
-            return NotFound(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error deleting task {TaskId}", taskId);
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 
@@ -244,33 +252,31 @@ public class TasksController : ControllerBase
     /// Change task status
     /// </summary>
     [HttpPatch("{taskId}/status")]
-    public async Task<ActionResult<ApiResponse<object>>> ChangeTaskStatus(int taskId, [FromQuery] int status)
+    public async Task<ActionResult<ApiResponse<TaskDto>>> ChangeTaskStatus(int taskId, [FromBody] ChangeTaskStatusDto dto)
     {
         try
         {
             var userId = GetUserIdOrThrow();
-            await _taskService.ChangeTaskStatusAsync(taskId, status, userId);
-            return Ok(new ApiResponse<object>
+            if (!Enum.TryParse<TaskStatus>(dto.NewStatus.ToString(), out var newStatus))
+                return BadRequest(new ApiResponse<object> { Success = false, Message = "Invalid status value" });
+
+            var command = new ChangeTaskStatusCommand(taskId, newStatus, userId);
+            var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
+            return Ok(new ApiResponse<TaskDto>
             {
                 Success = true,
-                Message = "Task status updated successfully"
+                Message = result.Message,
+                Data = result.Value
             });
         }
-        catch (KeyNotFoundException ex)
+        catch (Exception ex)
         {
-            return NotFound(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error changing task status for {TaskId}", taskId);
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 
@@ -278,33 +284,28 @@ public class TasksController : ControllerBase
     /// Assign task to a user
     /// </summary>
     [HttpPatch("{taskId}/assign")]
-    public async Task<ActionResult<ApiResponse<object>>> AssignTask(int taskId, [FromQuery] int? assigneeId)
+    public async Task<ActionResult<ApiResponse<TaskDto>>> AssignTask(int taskId, [FromBody] AssignTaskDto dto)
     {
         try
         {
             var userId = GetUserIdOrThrow();
-            await _taskService.AssignTaskAsync(taskId, assigneeId, userId);
-            return Ok(new ApiResponse<object>
+            var command = new AssignTaskCommand(taskId, dto.AssigneeId, userId);
+            var result = await _mediator.Send(command);
+
+            if (!result.IsSuccess)
+                return BadRequest(new ApiResponse<object> { Success = false, Message = result.Error });
+
+            return Ok(new ApiResponse<TaskDto>
             {
                 Success = true,
-                Message = "Task assigned successfully"
+                Message = result.Message,
+                Data = result.Value
             });
         }
-        catch (KeyNotFoundException ex)
+        catch (Exception ex)
         {
-            return NotFound(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
-        }
-        catch (UnauthorizedAccessException ex)
-        {
-            return Unauthorized(new ApiResponse<object>
-            {
-                Success = false,
-                Message = ex.Message
-            });
+            _logger.LogError(ex, "Error assigning task {TaskId}", taskId);
+            return StatusCode(500, new ApiResponse<object> { Success = false, Message = "Internal server error" });
         }
     }
 }

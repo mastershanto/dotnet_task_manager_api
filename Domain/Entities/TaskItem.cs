@@ -240,6 +240,74 @@ public class TaskItem : AuditableEntity
         });
     }
 
+    /// <summary>
+    /// Update task title
+    /// </summary>
+    public void UpdateTitle(string title)
+    {
+        ValidateTitle(title);
+        Title = title.Trim();
+    }
+
+    /// <summary>
+    /// Update task description
+    /// </summary>
+    public void UpdateDescription(string? description)
+    {
+        Description = description?.Trim();
+    }
+
+    /// <summary>
+    /// Update task priority
+    /// </summary>
+    public void UpdatePriority(TaskPriority priority)
+    {
+        Priority = priority;
+    }
+
+    /// <summary>
+    /// Set start date
+    /// </summary>
+    public void SetStartDate(DateTime? startDate)
+    {
+        StartDate = startDate;
+    }
+
+    /// <summary>
+    /// Set progress percentage
+    /// </summary>
+    public void SetProgress(double progress)
+    {
+        if (progress < 0 || progress > 100)
+            throw new ArgumentException("Progress must be between 0 and 100");
+
+        Progress = progress;
+    }
+
+    /// <summary>
+    /// Set tags for the task
+    /// </summary>
+    public void SetTags(string tags)
+    {
+        Tags = tags?.Trim();
+    }
+
+    /// <summary>
+    /// Set parent task ID
+    /// </summary>
+    public void SetParentTask(int parentTaskId)
+    {
+        ParentTaskId = parentTaskId;
+    }
+
+    /// <summary>
+    /// Unassign task (remove assignee)
+    /// </summary>
+    public void Unassign()
+    {
+        AssigneeId = null;
+    }
+
     // Private validation methods
     private static void ValidateTitle(string title)
     {
