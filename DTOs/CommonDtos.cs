@@ -1,5 +1,9 @@
 namespace TodoApi.DTOs;
 
+// Backward compatibility - redirect to new presentation DTOs
+using TodoApi.Presentation.Common;
+using TodoApi.Presentation.DTOs;
+
 public class ApiResponse<T>
 {
     public bool Success { get; set; }
@@ -221,10 +225,6 @@ public class UserDto
     public DateTime CreatedAt { get; set; }
     public DateTime? LastLoginAt { get; set; }
 }
-
-// Backward compatibility - redirect to new presentation DTOs
-using TodoApi.Presentation.Common;
-using TodoApi.Presentation.DTOs;
 
 // For backward compatibility with existing code using old DTOs
 public static class DtoAliases
