@@ -1,0 +1,184 @@
+version: '3.8'
+
+# ============================================
+# ENTERPRISE DOCKER COMPOSE CONFIGURATION
+# ============================================
+# Production-ready multi-service orchestration
+
+services:
+  # ============================================
+  # API Service
+  # ============================================
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - BUILDKIT_INLINE_CACHE=1
+    image: todo-api:latest
+    container_name: todo-api
+    restart: unless-stopped
+    ports:
+      - "5000:8080"
+      - "5001:8081"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ASPNETCORE_URLS=http://+:8080
+      
+      # JWT Configuration (from .env file)
+      - Jwt__Key=${JWT_SECRET_KEY}
+      - Jwt__Issuer=${JWT_ISSUER:-TodoApi}
+      - Jwt__Audience=${JWT_AUDIENCE:-TodoApiClients}
+      - Jwt__ExpiresMinutes=${JWT_EXPIRES_MINUTES:-60}
+      - Jwt__RefreshTokenExpiryDays=${JWT_REFRESH_TOKEN_EXPIRY_DAYS:-7}
+      - Jwt__ClockSkewSeconds=${JWT_CLOCK_SKEW_SECONDS:-300}
+      
+      # Database Configuration
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=${POSTGRES_DB:-todo_api};Username=${POSTGRES_USER:-todoapi};Password=${POSTGRES_PASSWORD}
+      
+      # Redis Configuration
+      - ConnectionStrings__Redis=redis:6379,password=${REDIS_PASSWORD},ssl=False,abortConnect=False
+      
+      # OpenTelemetry
+      - OpenTelemetry__ServiceName=TodoApi
+      - OpenTelemetry__OtlpEndpoint=${OTEL_EXPORTER_OTLP_ENDPOINT:-}
+      - OpenTelemetry__ConsoleExporterEnabled=false
+      
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    networks:
+      - todo-network
+    volumes:
+      - ./logs:/app/logs
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080/health/live"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+
+  # ============================================
+  # PostgreSQL Database
+  # ============================================
+  postgres:
+    image: postgres:16-alpine
+    container_name: todo-postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=${POSTGRES_DB:-todo_api}
+      - POSTGRES_USER=${POSTGRES_USER:-todoapi}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_INITDB_ARGS=--encoding=UTF8 --lc-collate=en_US.UTF-8 --lc-ctype=en_US.UTF-8
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - todo-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-todoapi} -d ${POSTGRES_DB:-todo_api}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+
+  # ============================================
+  # Redis Cache
+  # ============================================
+  redis:
+    image: redis:7-alpine
+    container_name: todo-redis
+    restart: unless-stopped
+    command: >
+      redis-server
+      --requirepass ${REDIS_PASSWORD}
+      --maxmemory 256mb
+      --maxmemory-policy allkeys-lru
+      --appendonly yes
+      --appendfsync everysec
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - todo-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "--raw", "incr", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 10s
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+
+  # ============================================
+  # PgAdmin (Optional - Development/Staging Only)
+  # ============================================
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: todo-pgadmin
+    restart: unless-stopped
+    profiles: ["dev", "staging"]
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=${PGADMIN_EMAIL:-admin@todoapi.local}
+      - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_PASSWORD}
+      - PGADMIN_CONFIG_SERVER_MODE=False
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    networks:
+      - todo-network
+    depends_on:
+      - postgres
+
+# ============================================
+# Volumes
+# ============================================
+volumes:
+  postgres-data:
+    driver: local
+    name: todo_postgres_data
+  redis-data:
+    driver: local
+    name: todo_redis_data
+  pgadmin-data:
+    driver: local
+    name: todo_pgadmin_data
+
+# ============================================
+# Networks
+# ============================================
+networks:
+  todo-network:
+    driver: bridge
+    name: todo_network
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

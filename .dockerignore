@@ -1,0 +1,76 @@
+# ============================================
+# DOCKER IGNORE FILE
+# ============================================
+# Exclude unnecessary files from Docker build context
+
+# Build outputs
+**/bin/
+**/obj/
+**/out/
+**/publish/
+
+# Development files
+**/.vs/
+**/.vscode/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+**/*.Development.json
+appsettings.Development.json
+
+# Logs
+**/logs/
+*.log
+
+# Database files
+**/*.db
+**/*.db-shm
+**/*.db-wal
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Documentation
+*.md
+!README.md
+
+# Tests
+**/tests/
+**/*.Tests/
+**/*.IntegrationTests/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+azure-pipelines.yml
+
+# Package manager
+**/node_modules/
+**/packages/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+**/tmp/
+**/temp/

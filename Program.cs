@@ -221,6 +221,67 @@ try
             }
         });
 
+    // Response Compression - Enterprise performance optimization
+    builder.Services.AddResponseCompression(options =>
+    {
+        options.EnableForHttps = true;
+        options.Providers.Add<Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProvider>();
+        options.Providers.Add<Microsoft.AspNetCore.ResponseCompression.GzipCompressionProvider>();
+    });
+
+    builder.Services.Configure<Microsoft.AspNetCore.ResponseCompression.BrotliCompressionProviderOptions>(options =>
+    {
+        options.Level = System.IO.Compression.CompressionLevel.Optimal;
+    });
+
+    builder.Services.Configure<Microsoft.AspNetCore.ResponseCompression.GzipCompressionProviderOptions>(options =>
+    {
+        options.Level = System.IO.Compression.CompressionLevel.Optimal;
+    });
+
+    // Rate Limiting - Enterprise API protection
+    builder.Services.AddEnterpriseRateLimiting();
+
+            if (!string.IsNullOrWhiteSpace(otelOtlpEndpoint))
+            {
+                tracing.AddOtlpExporter(o => o.Endpoint = new Uri(otelOtlpEndpoint));
+            }
+
+            if (otelEnableConsoleExporter)
+            {
+                tracing.AddConsoleExporter();
+            }
+        })
+        .WithMetrics(metrics =>
+        {
+            metrics
+                .AddAspNetCoreInstrumentation()
+                .AddHttpClientInstrumentation()
+                .AddRuntimeInstrumentation();
+
+            if (!string.IsNullOrWhiteSpace(otelOtlpEndpoint))
+            {
+                metrics.AddOtlpExporter(o => o.Endpoint = new Uri(otelOtlpEndpoint));
+            }
+        });
+
+    // JWT Configuration - Enterprise strongly-typed settings with validation
+    var jwtSection = builder.Configuration.GetSection(JwtSettings.SectionName);
+    builder.Services.Configure<JwtSettings>(jwtSection);
+
+    // Validate JWT settings at startup (fail-fast pattern)
+    var jwtSettings = jwtSection.Get<JwtSettings>() ?? new JwtSettings();
+    try
+    {
+        jwtSettings.Validate();
+        Log.Information("✅ JWT configuration validated successfully");
+    }
+    catch (InvalidOperationException ex)
+    {
+        Log.Fatal(ex, "❌ JWT configuration validation failed. Check appsettings.json");
+        throw;
+    }
+
     // Authentication
     builder.Services.AddHttpContextAccessor();
     builder.Services.AddScoped<ICurrentUserService, CurrentUserService>();
@@ -244,6 +305,12 @@ try
     // Global exception handling middleware
     app.UseExceptionHandling();
 
+    // Security headers middleware - Enterprise security
+    app.UseSecurityHeaders();
+
+    // Response compression - Performance optimization
+    app.UseResponseCompression();
+
     // Swagger UI
     if (app.Environment.IsDevelopment())
     {
@@ -263,14 +330,17 @@ try
 
     // Basic health check
     app.MapGet("/health/live", () => Results.Ok(new { status = "Healthy", timestamp = DateTime.UtcNow }))
-        .WithTags("Health")
-        ;
+        .WithTags("Health");
 
     if (!app.Environment.IsEnvironment("Testing"))
     {
         app.UseHttpsRedirection();
     }
+    
     app.UseCors("AllowAll");
+
+    // Rate limiting - Must be before authentication
+    app.UseRateLimiter();
 
     // Logging middleware
     app.UseSerilogRequestLogging();
