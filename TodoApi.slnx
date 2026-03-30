@@ -1,7 +1,0 @@
-<Solution>
-  <Folder Name="/tests/">
-    <!-- Test projects excluded from main build to avoid compilation conflicts -->
-    <!-- Run 'dotnet test' to build and run tests separately -->
-  </Folder>
-  <Project Path="TodoApi.csproj" />
-</Solution>
