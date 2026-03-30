@@ -16,6 +16,7 @@
     <Compile Include="../payment/**/*.cs" />
     <Compile Include="../product/**/*.cs" />
     <Compile Include="../user_data/**/*.cs" />
+    <Compile Include="../shared/**/*.cs" />
   </ItemGroup>
 
 </Project>

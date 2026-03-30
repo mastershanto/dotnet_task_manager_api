@@ -10,6 +10,10 @@ using App.Features.Product.Presentation;
 using App.Features.User.Data;
 using App.Features.User.Domain;
 using App.Features.User.Presentation;
+using App.Features.Auth.Application;
+using App.Features.Payment.Application;
+using App.Features.Product.Application;
+using App.Features.User.Application;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,9 +22,16 @@ builder.Services.AddSwaggerGen();
 
 // Feature wiring
 builder.Services.AddSingleton<IAuthService, AuthService>();
+builder.Services.AddSingleton<IAuthAppService, AuthAppService>();
+
 builder.Services.AddSingleton<IUserRepository, InMemoryUserRepository>();
+builder.Services.AddSingleton<IUserService, UserService>();
+
 builder.Services.AddSingleton<IProductRepository, InMemoryProductRepository>();
+builder.Services.AddSingleton<IProductService, ProductService>();
+
 builder.Services.AddSingleton<IPaymentService, PaymentService>();
+builder.Services.AddSingleton<IPaymentAppService, PaymentAppService>();
 
 var app = builder.Build();
 

@@ -1,4 +1,4 @@
-using App.Features.User.Data;
+using App.Features.User.Application;
 using App.Features.User.Domain;
 
 namespace App.Features.User.Presentation;
@@ -7,29 +7,34 @@ public static class UserEndpoints
 {
     public static void MapUsers(this WebApplication app)
     {
-        app.MapGet("/users", async (IUserRepository userRepository) => Results.Ok(await userRepository.ListAsync()));
-
-        app.MapGet("/users/{id:guid}", async (IUserRepository userRepository, Guid id) =>
+        app.MapGet("/users", async (IUserService userService) =>
         {
-            var found = await userRepository.GetAsync(id);
-            return found is null ? Results.NotFound() : Results.Ok(found);
+            var result = await userService.GetUsersAsync();
+            return result.IsSuccess ? Results.Ok(result.Value) : Results.Problem(string.Join(",", result.Errors));
         });
 
-        app.MapPost("/users", async (IUserRepository userRepository, UserModel user) =>
+        app.MapGet("/users/{id:guid}", async (IUserService userService, Guid id) =>
         {
-            var created = await userRepository.CreateAsync(user);
-            return Results.Created($"/users/{created.Id}", created);
+            var result = await userService.GetUserAsync(id);
+            return result.IsSuccess ? Results.Ok(result.Value) : Results.NotFound(result.Errors);
         });
 
-        app.MapPut("/users/{id:guid}", async (IUserRepository userRepository, Guid id, UserModel user) =>
+        app.MapPost("/users", async (IUserService userService, UserModel user) =>
         {
-            var updated = await userRepository.UpdateAsync(id, user);
-            return updated is null ? Results.NotFound() : Results.Ok(updated);
+            var result = await userService.CreateUserAsync(user);
+            return result.IsSuccess ? Results.Created($"/users/{result.Value!.Id}", result.Value) : Results.BadRequest(result.Errors);
         });
 
-        app.MapDelete("/users/{id:guid}", async (IUserRepository userRepository, Guid id) =>
+        app.MapPut("/users/{id:guid}", async (IUserService userService, Guid id, UserModel user) =>
         {
-            return await userRepository.DeleteAsync(id) ? Results.NoContent() : Results.NotFound();
+            var result = await userService.UpdateUserAsync(id, user);
+            return result.IsSuccess ? Results.Ok(result.Value) : Results.NotFound(result.Errors);
+        });
+
+        app.MapDelete("/users/{id:guid}", async (IUserService userService, Guid id) =>
+        {
+            var result = await userService.DeleteUserAsync(id);
+            return result.IsSuccess ? Results.NoContent() : Results.NotFound(result.Errors);
         });
     }
 }
