@@ -30,15 +30,16 @@ ENV ASPNETCORE_URLS=http://+:8080 \
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
 WORKDIR /src
 
-# Copy project file and restore dependencies (layer caching optimization)
-COPY ["TodoApi.csproj", "./"]
-RUN dotnet restore "TodoApi.csproj" \
+# Copy solution and project files and restore dependencies (layer caching optimization)
+COPY ["dotnet_task_manager_api.sln", "./"]
+COPY ["src/Api/Api.csproj", "src/Api/"]
+RUN dotnet restore "dotnet_task_manager_api.sln" \
     --runtime linux-musl-x64 \
     --locked-mode
 
 # Copy source code and build
 COPY . .
-RUN dotnet build "TodoApi.csproj" \
+RUN dotnet build "src/Api/Api.csproj" \
     -c Release \
     -o /app/build \
     --no-restore \
@@ -49,7 +50,7 @@ RUN dotnet build "TodoApi.csproj" \
 # Stage 3: Publish Image
 # ============================================
 FROM build AS publish
-RUN dotnet publish "TodoApi.csproj" \
+RUN dotnet publish "src/Api/Api.csproj" \
     -c Release \
     -o /app/publish \
     --no-restore \
@@ -76,4 +77,4 @@ HEALTHCHECK --interval=30s --timeout=3s --start-period=10s --retries=3 \
     CMD wget --no-verbose --tries=1 --spider http://localhost:8080/health/live || exit 1
 
 # Entry point
-ENTRYPOINT ["dotnet", "TodoApi.dll"]
+ENTRYPOINT ["dotnet", "Api.dll"]
