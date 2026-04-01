@@ -1,44 +1,51 @@
 using App.Features.Product.Domain;
+using System.Collections.Concurrent;
 
 namespace App.Features.Product.Data;
 
 public class InMemoryProductRepository : IProductRepository
 {
-    private readonly List<ProductModel> _store = new()
+    private readonly ConcurrentDictionary<Guid, ProductModel> _store = new();
+
+    public InMemoryProductRepository()
     {
-        new ProductModel { Title = "Smartphone", Description = "4G smartphone", Price = 199.99m, Category = "Electronics" },
-        new ProductModel { Title = "Backpack", Description = "Travel backpack", Price = 49.99m, Category = "Accessories" }
-    };
+        Seed(new ProductModel { Title = "Smartphone", Description = "4G smartphone", Price = 199.99m, Category = "Electronics" });
+        Seed(new ProductModel { Title = "Backpack", Description = "Travel backpack", Price = 49.99m, Category = "Accessories" });
+    }
+
+    private void Seed(ProductModel product)
+    {
+        _store[product.Id] = product;
+    }
 
     public Task<ProductModel> CreateAsync(ProductModel product)
     {
         var item = product with { Id = Guid.NewGuid(), CreatedAt = DateTime.UtcNow };
-        _store.Add(item);
+        _store[item.Id] = item;
         return Task.FromResult(item);
     }
 
     public Task<bool> DeleteAsync(Guid id)
     {
-        var found = _store.FirstOrDefault(x => x.Id == id);
-        if (found is null) return Task.FromResult(false);
-
-        _store.Remove(found);
-        return Task.FromResult(true);
+        var removed = _store.TryRemove(id, out _);
+        return Task.FromResult(removed);
     }
 
     public Task<ProductModel?> GetAsync(Guid id)
     {
-        return Task.FromResult(_store.FirstOrDefault(x => x.Id == id));
+        _store.TryGetValue(id, out var product);
+        return Task.FromResult(product);
     }
 
-    public Task<IEnumerable<ProductModel>> ListAsync() => Task.FromResult(_store.AsEnumerable());
+    public Task<IEnumerable<ProductModel>> ListAsync() =>
+        Task.FromResult(_store.Values.OrderBy(x => x.CreatedAt).AsEnumerable());
 
     public Task<ProductModel?> UpdateAsync(Guid id, ProductModel product)
     {
-        var found = _store.FirstOrDefault(x => x.Id == id);
-        if (found is null) return Task.FromResult<ProductModel?>(null);
+        if (!_store.TryGetValue(id, out var existing))
+            return Task.FromResult<ProductModel?>(null);
 
-        var updated = found with
+        var updated = existing with
         {
             Title = product.Title,
             Description = product.Description,
@@ -46,9 +53,7 @@ public class InMemoryProductRepository : IProductRepository
             Category = product.Category
         };
 
-        _store.Remove(found);
-        _store.Add(updated);
-
-        return Task.FromResult<ProductModel?>(updated);
+        var replaced = _store.TryUpdate(id, updated, existing);
+        return Task.FromResult<ProductModel?>(replaced ? updated : null);
     }
 }

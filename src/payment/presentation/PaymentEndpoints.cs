@@ -6,17 +6,21 @@ namespace App.Features.Payment.Presentation;
 
 public static class PaymentEndpoints
 {
-    public static void MapPayment(this WebApplication app)
+    public static void MapPayment(this IEndpointRouteBuilder endpoints)
     {
-        app.MapPost("/payment/process", async (IPaymentAppService paymentAppService, PaymentModel payment) =>
+        var group = endpoints.MapGroup("/payment").WithTags("Payment");
+
+        group.MapPost("/process", async (IPaymentAppService paymentAppService, PaymentModel payment) =>
         {
             var validation = Validation.Validate(payment).ToArray();
             if (validation.Any())
-                return Results.BadRequest(validation.Select(x => x.ErrorMessage));
+                return Results.ValidationProblem(Validation.ToErrorDictionary(validation));
 
             var result = await paymentAppService.ProcessAsync(payment.UserId, payment.Amount, payment.Currency);
             return result.IsSuccess ? Results.Ok(result.Value) : Results.BadRequest(result.Errors);
         })
-        .WithTags("Payment");
+        .Produces<PaymentModel>(StatusCodes.Status200OK)
+        .ProducesValidationProblem()
+        .Produces(StatusCodes.Status400BadRequest);
     }
 }

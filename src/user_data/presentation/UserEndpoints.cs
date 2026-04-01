@@ -6,43 +6,58 @@ namespace App.Features.User.Presentation;
 
 public static class UserEndpoints
 {
-    public static void MapUsers(this WebApplication app)
+    public static void MapUsers(this IEndpointRouteBuilder endpoints)
     {
-        app.MapGet("/users", async (IUserService userService) =>
+        var group = endpoints.MapGroup("/users").WithTags("Users");
+
+        group.MapGet("/", async (IUserService userService) =>
         {
             var result = await userService.GetUsersAsync();
             return result.IsSuccess ? Results.Ok(result.Value) : Results.Problem(string.Join(",", result.Errors));
         })
-        .WithTags("Users");
+        .Produces<IEnumerable<UserModel>>(StatusCodes.Status200OK)
+        .ProducesProblem(StatusCodes.Status500InternalServerError);
 
-        app.MapGet("/users/{id:guid}", async (IUserService userService, Guid id) =>
+        group.MapGet("/{id:guid}", async (IUserService userService, Guid id) =>
         {
             var result = await userService.GetUserAsync(id);
             return result.IsSuccess ? Results.Ok(result.Value) : Results.NotFound(result.Errors);
         })
-        .WithTags("Users");
+        .Produces<UserModel>(StatusCodes.Status200OK)
+        .Produces(StatusCodes.Status404NotFound);
 
-        app.MapPost("/users", async (IUserService userService, UserModel user) =>
+        group.MapPost("/", async (IUserService userService, UserModel user) =>
         {
             var validation = Validation.Validate(user).ToArray();
             if (validation.Any())
-                return Results.BadRequest(validation.Select(x => x.ErrorMessage));
+                return Results.ValidationProblem(Validation.ToErrorDictionary(validation));
 
             var result = await userService.CreateUserAsync(user);
             return result.IsSuccess ? Results.Created($"/users/{result.Value!.Id}", result.Value) : Results.BadRequest(result.Errors);
         })
-        .WithTags("Users");
+        .Produces<UserModel>(StatusCodes.Status201Created)
+        .ProducesValidationProblem()
+        .Produces(StatusCodes.Status400BadRequest);
 
-        app.MapPut("/users/{id:guid}", async (IUserService userService, Guid id, UserModel user) =>
+        group.MapPut("/{id:guid}", async (IUserService userService, Guid id, UserModel user) =>
         {
+            var validation = Validation.Validate(user).ToArray();
+            if (validation.Any())
+                return Results.ValidationProblem(Validation.ToErrorDictionary(validation));
+
             var result = await userService.UpdateUserAsync(id, user);
             return result.IsSuccess ? Results.Ok(result.Value) : Results.NotFound(result.Errors);
-        });
+        })
+        .Produces<UserModel>(StatusCodes.Status200OK)
+        .ProducesValidationProblem()
+        .Produces(StatusCodes.Status404NotFound);
 
-        app.MapDelete("/users/{id:guid}", async (IUserService userService, Guid id) =>
+        group.MapDelete("/{id:guid}", async (IUserService userService, Guid id) =>
         {
             var result = await userService.DeleteUserAsync(id);
             return result.IsSuccess ? Results.NoContent() : Results.NotFound(result.Errors);
-        });
+        })
+        .Produces(StatusCodes.Status204NoContent)
+        .Produces(StatusCodes.Status404NotFound);
     }
 }
