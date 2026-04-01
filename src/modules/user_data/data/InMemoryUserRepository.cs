@@ -1,7 +1,7 @@
-using App.Features.User.Domain;
+using Users.Domain;
 using System.Collections.Concurrent;
 
-namespace App.Features.User.Data;
+namespace Users.Data;
 
 public class InMemoryUserRepository : IUserRepository
 {

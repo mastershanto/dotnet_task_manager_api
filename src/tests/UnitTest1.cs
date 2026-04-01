@@ -1,5 +1,5 @@
-﻿using App.Features.User.Domain;
-using Shared;
+﻿using Users.Domain;
+using BuildingBlocks.Abstractions;
 
 namespace Api.Tests;
 

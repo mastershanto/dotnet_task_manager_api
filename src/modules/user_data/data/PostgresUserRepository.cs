@@ -1,7 +1,7 @@
-using App.Features.User.Domain;
+using Users.Domain;
 using Npgsql;
 
-namespace App.Features.User.Data;
+namespace Users.Data;
 
 public class PostgresUserRepository : IUserRepository
 {

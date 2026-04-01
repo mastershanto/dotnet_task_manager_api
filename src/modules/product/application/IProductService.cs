@@ -1,7 +1,7 @@
-using App.Features.Product.Domain;
-using Shared;
+using Products.Domain;
+using BuildingBlocks.Abstractions;
 
-namespace App.Features.Product.Application;
+namespace Products.Application;
 
 public interface IProductService
 {

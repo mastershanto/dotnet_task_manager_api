@@ -20,11 +20,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="../modules/auth/**/*.cs" />
-    <Compile Include="../modules/payment/**/*.cs" />
-    <Compile Include="../modules/product/**/*.cs" />
-    <Compile Include="../modules/user_data/**/*.cs" />
-    <Compile Include="../shared/**/*.cs" />
+    <!-- Module API Layer References -->
+    <ProjectReference Include="../modules/auth/presentation/Auth.Api.csproj" />
+    <ProjectReference Include="../modules/payment/presentation/Payments.Api.csproj" />
+    <ProjectReference Include="../modules/product/presentation/Products.Api.csproj" />
+    <ProjectReference Include="../modules/user_data/presentation/Users.Api.csproj" />
+
+    <!-- Module Infrastructure Layer References -->
+    <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/payment/data/Payments.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/product/data/Products.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/user_data/data/Users.Infrastructure.csproj" />
+
+    <!-- BuildingBlocks References -->
+    <ProjectReference Include="../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj" />
+    <ProjectReference Include="../BuildingBlocks/Web/BuildingBlocks.Web.csproj" />
+    <ProjectReference Include="../BuildingBlocks/Security/BuildingBlocks.Security.csproj" />
   </ItemGroup>
 
 </Project>

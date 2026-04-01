@@ -1,7 +1,7 @@
-using App.Features.Auth.Domain;
+using Auth.Domain;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
-using Shared.Security;
+using BuildingBlocks.Security;
 using System.Text;
 
 namespace Api.Configuration;

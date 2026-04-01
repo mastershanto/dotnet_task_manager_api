@@ -1,4 +1,7 @@
-namespace Shared.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+
+namespace BuildingBlocks.Web;
 
 public sealed class ExceptionHandlingMiddleware
 {

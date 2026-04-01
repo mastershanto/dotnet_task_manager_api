@@ -1,4 +1,4 @@
-namespace App.Features.User.Domain;
+namespace Users.Domain;
 
 public interface IUserRepository
 {

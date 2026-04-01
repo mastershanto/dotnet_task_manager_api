@@ -1,9 +1,10 @@
-using App.Features.Payment.Application;
-using App.Features.Payment.Domain;
-using Shared;
-using Shared.Security;
+using Payments.Application;
+using Payments.Domain;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.Security;
+using Microsoft.AspNetCore.Builder;
 
-namespace App.Features.Payment.Presentation;
+namespace Payments.Presentation;
 
 public static class PaymentEndpoints
 {

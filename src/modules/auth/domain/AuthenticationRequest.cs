@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace App.Features.Auth.Domain;
+namespace Auth.Domain;
 
 public record AuthenticationRequest
 {

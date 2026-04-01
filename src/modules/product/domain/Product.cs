@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace App.Features.Product.Domain;
+namespace Products.Domain;
 
 public record ProductModel
 {

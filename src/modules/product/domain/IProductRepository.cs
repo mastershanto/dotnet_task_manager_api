@@ -1,4 +1,4 @@
-namespace App.Features.Product.Domain;
+namespace Products.Domain;
 
 public interface IProductRepository
 {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace App.Features.Payment.Domain;
+namespace Payments.Domain;
 
 public record PaymentModel
 {

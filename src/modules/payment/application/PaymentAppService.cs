@@ -1,9 +1,8 @@
-using App.Features.Payment.Data;
-using App.Features.Payment.Domain;
-using App.Features.User.Domain;
-using Shared;
+using Payments.Domain;
+using Users.Domain;
+using BuildingBlocks.Abstractions;
 
-namespace App.Features.Payment.Application;
+namespace Payments.Application;
 
 public class PaymentAppService : IPaymentAppService
 {

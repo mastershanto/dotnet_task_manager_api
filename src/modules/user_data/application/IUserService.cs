@@ -1,7 +1,7 @@
-using App.Features.User.Domain;
-using Shared;
+using Users.Domain;
+using BuildingBlocks.Abstractions;
 
-namespace App.Features.User.Application;
+namespace Users.Application;
 
 public interface IUserService
 {

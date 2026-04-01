@@ -1,4 +1,4 @@
-namespace Shared;
+namespace BuildingBlocks.Abstractions;
 
 public sealed class Result<T>
 {

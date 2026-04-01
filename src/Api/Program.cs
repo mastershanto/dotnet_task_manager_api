@@ -2,7 +2,7 @@ using Api.Configuration;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
-using Shared.Http;
+using BuildingBlocks.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,8 +1,9 @@
-using App.Features.Auth.Application;
-using App.Features.Auth.Domain;
-using Shared;
+using Auth.Application;
+using Auth.Domain;
+using BuildingBlocks.Abstractions;
+using Microsoft.AspNetCore.Builder;
 
-namespace App.Features.Auth.Presentation;
+namespace Auth.Presentation;
 
 public static class AuthEndpoints
 {

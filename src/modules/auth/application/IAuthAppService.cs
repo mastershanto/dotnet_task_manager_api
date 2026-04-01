@@ -1,7 +1,7 @@
-using App.Features.Auth.Domain;
-using Shared;
+using Auth.Domain;
+using BuildingBlocks.Abstractions;
 
-namespace App.Features.Auth.Application;
+namespace Auth.Application;
 
 public interface IAuthAppService
 {

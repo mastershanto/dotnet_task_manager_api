@@ -1,7 +1,7 @@
-using App.Features.Product.Domain;
+using Products.Domain;
 using System.Collections.Concurrent;
 
-namespace App.Features.Product.Data;
+namespace Products.Data;
 
 public class InMemoryProductRepository : IProductRepository
 {

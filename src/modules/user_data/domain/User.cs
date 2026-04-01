@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace App.Features.User.Domain;
+namespace Users.Domain;
 
 public record UserModel
 {

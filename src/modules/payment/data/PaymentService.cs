@@ -1,6 +1,6 @@
-using App.Features.Payment.Domain;
+using Payments.Domain;
 
-namespace App.Features.Payment.Data;
+namespace Payments.Data;
 
 public class PaymentService : IPaymentService
 {

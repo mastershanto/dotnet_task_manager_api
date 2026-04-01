@@ -1,7 +1,7 @@
-using App.Features.Payment.Domain;
-using Shared;
+using Payments.Domain;
+using BuildingBlocks.Abstractions;
 
-namespace App.Features.Payment.Application;
+namespace Payments.Application;
 
 public interface IPaymentAppService
 {

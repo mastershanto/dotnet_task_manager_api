@@ -1,4 +1,4 @@
-namespace App.Features.Payment.Domain;
+namespace Payments.Domain;
 
 public interface IPaymentService
 {

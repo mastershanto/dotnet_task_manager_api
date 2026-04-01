@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Shared;
+namespace BuildingBlocks.Abstractions;
 
 public static class Validation
 {

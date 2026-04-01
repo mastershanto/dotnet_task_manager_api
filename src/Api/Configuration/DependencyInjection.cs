@@ -1,15 +1,15 @@
-using App.Features.Auth.Application;
-using App.Features.Auth.Data;
-using App.Features.Auth.Domain;
-using App.Features.Payment.Application;
-using App.Features.Payment.Data;
-using App.Features.Payment.Domain;
-using App.Features.Product.Application;
-using App.Features.Product.Data;
-using App.Features.Product.Domain;
-using App.Features.User.Application;
-using App.Features.User.Data;
-using App.Features.User.Domain;
+using Auth.Application;
+using Auth.Data;
+using Auth.Domain;
+using Payments.Application;
+using Payments.Data;
+using Payments.Domain;
+using Products.Application;
+using Products.Data;
+using Products.Domain;
+using Users.Application;
+using Users.Data;
+using Users.Domain;
 using Api.Infrastructure.Persistence;
 using Npgsql;
 

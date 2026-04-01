@@ -1,4 +1,4 @@
-namespace Shared.Security;
+namespace BuildingBlocks.Security;
 
 public static class AuthPolicies
 {

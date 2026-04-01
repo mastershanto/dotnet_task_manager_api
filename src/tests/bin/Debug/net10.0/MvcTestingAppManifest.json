@@ -1,3 +1,22 @@
 {
-  "Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/Api"
+  "Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/Api",
+  "Auth.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/auth\/presentation",
+  "Auth.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/auth\/application",
+  "Auth.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/auth\/domain",
+  "Auth.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/auth\/data",
+  "BuildingBlocks.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/BuildingBlocks\/Abstractions",
+  "BuildingBlocks.Security, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/BuildingBlocks\/Security",
+  "BuildingBlocks.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/BuildingBlocks\/Web",
+  "Payments.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/payment\/presentation",
+  "Payments.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/payment\/application",
+  "Payments.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/payment\/domain",
+  "Payments.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/payment\/data",
+  "Products.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/product\/presentation",
+  "Products.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/product\/application",
+  "Products.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/product\/domain",
+  "Products.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/product\/data",
+  "Users.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/user_data\/presentation",
+  "Users.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/user_data\/application",
+  "Users.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/user_data\/domain",
+  "Users.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "\/Users\/masterShanto\/developments\/c#_development\/dotnet_task_manager_api\/src\/modules\/user_data\/data"
 }

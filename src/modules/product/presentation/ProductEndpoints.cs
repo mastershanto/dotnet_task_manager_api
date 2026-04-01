@@ -1,9 +1,10 @@
-using App.Features.Product.Application;
-using App.Features.Product.Domain;
-using Shared;
-using Shared.Security;
+using Products.Application;
+using Products.Domain;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.Security;
+using Microsoft.AspNetCore.Builder;
 
-namespace App.Features.Product.Presentation;
+namespace Products.Presentation;
 
 public static class ProductEndpoints
 {

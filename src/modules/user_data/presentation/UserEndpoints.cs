@@ -1,9 +1,10 @@
-using App.Features.User.Application;
-using App.Features.User.Domain;
-using Shared;
-using Shared.Security;
+using Users.Application;
+using Users.Domain;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.Security;
+using Microsoft.AspNetCore.Builder;
 
-namespace App.Features.User.Presentation;
+namespace Users.Presentation;
 
 public static class UserEndpoints
 {

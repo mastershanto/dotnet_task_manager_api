@@ -1,7 +1,7 @@
-using App.Features.Payment.Domain;
+using Payments.Domain;
 using Npgsql;
 
-namespace App.Features.Payment.Data;
+namespace Payments.Data;
 
 public class PostgresPaymentService : IPaymentService
 {

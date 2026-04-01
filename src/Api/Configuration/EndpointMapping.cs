@@ -1,7 +1,7 @@
-using App.Features.Auth.Presentation;
-using App.Features.Payment.Presentation;
-using App.Features.Product.Presentation;
-using App.Features.User.Presentation;
+using Auth.Presentation;
+using Payments.Presentation;
+using Products.Presentation;
+using Users.Presentation;
 
 namespace Api.Configuration;
 

@@ -1,7 +1,7 @@
-using App.Features.Product.Domain;
+using Products.Domain;
 using Npgsql;
 
-namespace App.Features.Product.Data;
+namespace Products.Data;
 
 public class PostgresProductRepository : IProductRepository
 {

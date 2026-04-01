@@ -460,6 +460,278 @@
             "related": ".xml"
           }
         }
+      },
+      "Auth.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Auth.Application": "1.0.0",
+          "Auth.Domain": "1.0.0",
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Auth.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Auth.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Auth.Domain": "1.0.0",
+          "BuildingBlocks.Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Auth.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Application.dll": {}
+        }
+      },
+      "Auth.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Auth.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Domain.dll": {}
+        }
+      },
+      "Auth.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Auth.Domain": "1.0.0",
+          "Microsoft.IdentityModel.Tokens": "8.0.1",
+          "Npgsql": "8.0.4",
+          "System.IdentityModel.Tokens.Jwt": "8.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Auth.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Auth.Infrastructure.dll": {}
+        }
+      },
+      "BuildingBlocks.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BuildingBlocks.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildingBlocks.Abstractions.dll": {}
+        }
+      },
+      "BuildingBlocks.Security/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BuildingBlocks.Security.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildingBlocks.Security.dll": {}
+        }
+      },
+      "BuildingBlocks.Web/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/BuildingBlocks.Web.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BuildingBlocks.Web.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Payments.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Payments.Application": "1.0.0",
+          "Payments.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payments.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payments.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Payments.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Payments.Domain": "1.0.0",
+          "Users.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payments.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payments.Application.dll": {}
+        }
+      },
+      "Payments.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Payments.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payments.Domain.dll": {}
+        }
+      },
+      "Payments.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Npgsql": "8.0.4",
+          "Payments.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payments.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payments.Infrastructure.dll": {}
+        }
+      },
+      "Products.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Products.Application": "1.0.0",
+          "Products.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Products.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Products.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Products.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Products.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Products.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Products.Application.dll": {}
+        }
+      },
+      "Products.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Products.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Products.Domain.dll": {}
+        }
+      },
+      "Products.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Npgsql": "8.0.4",
+          "Products.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Products.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Products.Infrastructure.dll": {}
+        }
+      },
+      "Users.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Users.Application": "1.0.0",
+          "Users.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Users.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Users.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users.Application.dll": {}
+        }
+      },
+      "Users.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Users.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users.Domain.dll": {}
+        }
+      },
+      "Users.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Npgsql": "8.0.4",
+          "Users.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Users.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Users.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1333,10 +1605,110 @@
         "system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
         "system.identitymodel.tokens.jwt.nuspec"
       ]
+    },
+    "Auth.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/auth/presentation/Auth.Api.csproj",
+      "msbuildProject": "../modules/auth/presentation/Auth.Api.csproj"
+    },
+    "Auth.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/auth/application/Auth.Application.csproj",
+      "msbuildProject": "../modules/auth/application/Auth.Application.csproj"
+    },
+    "Auth.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/auth/domain/Auth.Domain.csproj",
+      "msbuildProject": "../modules/auth/domain/Auth.Domain.csproj"
+    },
+    "Auth.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/auth/data/Auth.Infrastructure.csproj",
+      "msbuildProject": "../modules/auth/data/Auth.Infrastructure.csproj"
+    },
+    "BuildingBlocks.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj",
+      "msbuildProject": "../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+    },
+    "BuildingBlocks.Security/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/Security/BuildingBlocks.Security.csproj",
+      "msbuildProject": "../BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+    },
+    "BuildingBlocks.Web/1.0.0": {
+      "type": "project",
+      "path": "../BuildingBlocks/Web/BuildingBlocks.Web.csproj",
+      "msbuildProject": "../BuildingBlocks/Web/BuildingBlocks.Web.csproj"
+    },
+    "Payments.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/payment/presentation/Payments.Api.csproj",
+      "msbuildProject": "../modules/payment/presentation/Payments.Api.csproj"
+    },
+    "Payments.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/payment/application/Payments.Application.csproj",
+      "msbuildProject": "../modules/payment/application/Payments.Application.csproj"
+    },
+    "Payments.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/payment/domain/Payments.Domain.csproj",
+      "msbuildProject": "../modules/payment/domain/Payments.Domain.csproj"
+    },
+    "Payments.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/payment/data/Payments.Infrastructure.csproj",
+      "msbuildProject": "../modules/payment/data/Payments.Infrastructure.csproj"
+    },
+    "Products.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/product/presentation/Products.Api.csproj",
+      "msbuildProject": "../modules/product/presentation/Products.Api.csproj"
+    },
+    "Products.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/product/application/Products.Application.csproj",
+      "msbuildProject": "../modules/product/application/Products.Application.csproj"
+    },
+    "Products.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/product/domain/Products.Domain.csproj",
+      "msbuildProject": "../modules/product/domain/Products.Domain.csproj"
+    },
+    "Products.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/product/data/Products.Infrastructure.csproj",
+      "msbuildProject": "../modules/product/data/Products.Infrastructure.csproj"
+    },
+    "Users.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/user_data/presentation/Users.Api.csproj",
+      "msbuildProject": "../modules/user_data/presentation/Users.Api.csproj"
+    },
+    "Users.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/user_data/application/Users.Application.csproj",
+      "msbuildProject": "../modules/user_data/application/Users.Application.csproj"
+    },
+    "Users.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/user_data/domain/Users.Domain.csproj",
+      "msbuildProject": "../modules/user_data/domain/Users.Domain.csproj"
+    },
+    "Users.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/user_data/data/Users.Infrastructure.csproj",
+      "msbuildProject": "../modules/user_data/data/Users.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
+      "Auth.Api >= 1.0.0",
+      "Auth.Infrastructure >= 1.0.0",
+      "BuildingBlocks.Abstractions >= 1.0.0",
+      "BuildingBlocks.Security >= 1.0.0",
+      "BuildingBlocks.Web >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.5",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
       "Npgsql >= 8.0.4",
@@ -1346,7 +1718,13 @@
       "OpenTelemetry.Instrumentation.AspNetCore >= 1.9.0",
       "OpenTelemetry.Instrumentation.Http >= 1.9.0",
       "OpenTelemetry.Instrumentation.Runtime >= 1.9.0",
-      "Swashbuckle.AspNetCore >= 10.1.7"
+      "Payments.Api >= 1.0.0",
+      "Payments.Infrastructure >= 1.0.0",
+      "Products.Api >= 1.0.0",
+      "Products.Infrastructure >= 1.0.0",
+      "Swashbuckle.AspNetCore >= 10.1.7",
+      "Users.Api >= 1.0.0",
+      "Users.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1373,7 +1751,41 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

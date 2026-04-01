@@ -1,4 +1,4 @@
-namespace App.Features.Auth.Domain;
+namespace Auth.Domain;
 
 public sealed class JwtOptions
 {
