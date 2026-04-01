@@ -1,6 +1,7 @@
 using App.Features.User.Application;
 using App.Features.User.Domain;
 using Shared;
+using Shared.Security;
 
 namespace App.Features.User.Presentation;
 
@@ -8,7 +9,9 @@ public static class UserEndpoints
 {
     public static void MapUsers(this IEndpointRouteBuilder endpoints)
     {
-        var group = endpoints.MapGroup("/users").WithTags("Users");
+        var group = endpoints.MapGroup("/users")
+            .WithTags("Users")
+            .RequireAuthorization(AuthPolicies.ApiUser);
 
         group.MapGet("/", async (IUserService userService) =>
         {

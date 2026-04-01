@@ -1,0 +1,11 @@
+INSERT INTO users (id, name, email, created_at)
+VALUES
+  ('00000000-0000-0000-0000-000000000001', 'Alice', 'alice@example.com', NOW()),
+  ('00000000-0000-0000-0000-000000000002', 'Bob', 'bob@example.com', NOW())
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO products (id, title, description, price, category, created_at)
+VALUES
+  ('10000000-0000-0000-0000-000000000001', 'Smartphone', '4G smartphone', 199.99, 'Electronics', NOW()),
+  ('10000000-0000-0000-0000-000000000002', 'Backpack', 'Travel backpack', 49.99, 'Accessories', NOW())
+ON CONFLICT (id) DO NOTHING;

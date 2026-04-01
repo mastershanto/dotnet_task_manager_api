@@ -1,4 +1,5 @@
 using System.Net;
+using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
@@ -23,9 +24,21 @@ public class UserEndpointsTests : IClassFixture<WebApplicationFactory<Program>>
     }
 
     [Fact]
-    public async Task GetUsers_ReturnsOk()
+    public async Task GetUsers_ReturnsUnauthorized_WithoutToken()
     {
         var response = await _client.GetAsync("/api/v1/users");
+
+        Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
+    }
+
+    [Fact]
+    public async Task GetUsers_ReturnsOk_WhenAuthenticated()
+    {
+        var token = await GetAccessTokenAsync();
+        using var request = new HttpRequestMessage(HttpMethod.Get, "/api/v1/users");
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+        var response = await _client.SendAsync(request);
         response.EnsureSuccessStatusCode();
 
         var payload = await response.Content.ReadAsStringAsync();
@@ -35,8 +48,16 @@ public class UserEndpointsTests : IClassFixture<WebApplicationFactory<Program>>
     [Fact]
     public async Task CreateUser_ReturnsCreated_WhenValid()
     {
+        var token = await GetAccessTokenAsync();
         var payload = new { Name = "Test", Email = "test@example.com" };
-        var response = await _client.PostAsJsonAsync("/api/v1/users", payload);
+
+        using var request = new HttpRequestMessage(HttpMethod.Post, "/api/v1/users")
+        {
+            Content = JsonContent.Create(payload)
+        };
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+        var response = await _client.SendAsync(request);
 
         Assert.Equal(HttpStatusCode.Created, response.StatusCode);
     }
@@ -44,9 +65,16 @@ public class UserEndpointsTests : IClassFixture<WebApplicationFactory<Program>>
     [Fact]
     public async Task CreateUser_ReturnsValidationProblem_WhenInvalid()
     {
+        var token = await GetAccessTokenAsync();
         var payload = new { Name = string.Empty, Email = "invalid" };
 
-        var response = await _client.PostAsJsonAsync("/api/v1/users", payload);
+        using var request = new HttpRequestMessage(HttpMethod.Post, "/api/v1/users")
+        {
+            Content = JsonContent.Create(payload)
+        };
+        request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+        var response = await _client.SendAsync(request);
 
         Assert.Equal(HttpStatusCode.BadRequest, response.StatusCode);
         var body = await response.Content.ReadAsStringAsync();
@@ -64,5 +92,29 @@ public class UserEndpointsTests : IClassFixture<WebApplicationFactory<Program>>
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         Assert.True(response.Headers.TryGetValues(CorrelationHeaderName, out var values));
         Assert.Contains("test-correlation", values);
+    }
+
+    private async Task<string> GetAccessTokenAsync()
+    {
+        var response = await _client.PostAsJsonAsync("/api/v1/auth/login", new
+        {
+            Email = "admin@example.com",
+            Password = "Password123"
+        });
+
+        response.EnsureSuccessStatusCode();
+
+        var auth = await response.Content.ReadFromJsonAsync<AuthResponse>();
+        Assert.NotNull(auth);
+        Assert.True(auth!.Success);
+        Assert.False(string.IsNullOrWhiteSpace(auth.Token));
+        return auth.Token!;
+    }
+
+    private sealed class AuthResponse
+    {
+        public bool Success { get; set; }
+        public string Message { get; set; } = string.Empty;
+        public string? Token { get; set; }
     }
 }

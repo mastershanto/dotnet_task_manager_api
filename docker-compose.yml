@@ -26,18 +26,15 @@ services:
       - ASPNETCORE_URLS=http://+:8080
       
       # JWT Configuration (from .env file)
-      - Jwt__Key=${JWT_SECRET_KEY}
-      - Jwt__Issuer=${JWT_ISSUER:-TodoApi}
-      - Jwt__Audience=${JWT_AUDIENCE:-TodoApiClients}
-      - Jwt__ExpiresMinutes=${JWT_EXPIRES_MINUTES:-60}
-      - Jwt__RefreshTokenExpiryDays=${JWT_REFRESH_TOKEN_EXPIRY_DAYS:-7}
-      - Jwt__ClockSkewSeconds=${JWT_CLOCK_SKEW_SECONDS:-300}
+      - Jwt__Issuer=${JWT_ISSUER:-TaskManager.Api}
+      - Jwt__Audience=${JWT_AUDIENCE:-TaskManager.Client}
+      - Jwt__SigningKey=${JWT_SECRET_KEY:-this-is-a-compose-dev-signing-key-change-before-prod-12345}
+      - Jwt__TokenExpirationMinutes=${JWT_EXPIRES_MINUTES:-60}
       
       # Database Configuration
-      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=${POSTGRES_DB:-todo_api};Username=${POSTGRES_USER:-todoapi};Password=${POSTGRES_PASSWORD}
-      
-      # Redis Configuration
-      - ConnectionStrings__Redis=redis:6379,password=${REDIS_PASSWORD},ssl=False,abortConnect=False
+      - ConnectionStrings__Postgres=Host=postgres;Port=5432;Database=${POSTGRES_DB:-todo_api};Username=${POSTGRES_USER:-todoapi};Password=${POSTGRES_PASSWORD}
+      - Persistence__Provider=Postgres
+      - Persistence__ApplyMigrationsOnStartup=true
       
       # OpenTelemetry
       - OpenTelemetry__ServiceName=TodoApi
@@ -84,7 +81,6 @@ services:
       - "5432:5432"
     volumes:
       - postgres-data:/var/lib/postgresql/data
-      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
     networks:
       - todo-network
     healthcheck:

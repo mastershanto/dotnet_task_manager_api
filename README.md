@@ -4,7 +4,7 @@ Production-oriented modular monolith built with ASP.NET Core Minimal APIs (.NET 
 
 ## Architecture At A Glance
 
-- Modular feature folders: `auth`, `user_data`, `product`, `payment`
+- Modular feature folders under `src/modules`: `auth`, `user_data`, `product`, `payment`
 - Layered boundaries per feature:
   - `domain` for contracts/models
   - `application` for use-cases/services
@@ -16,16 +16,29 @@ Production-oriented modular monolith built with ASP.NET Core Minimal APIs (.NET 
   - HTTP middleware (correlation-id + exception handling)
 - Versioned endpoint root: `/api/v1/*`
 - Backward-compatible legacy routes remain mapped for transition
+- Configurable persistence provider (`InMemory` or `Postgres`)
 
 ## Production Readiness Features
 
 - Centralized unhandled exception middleware returning RFC7807-style `ProblemDetails`
 - Correlation ID propagation (`X-Correlation-ID`) for distributed tracing
 - HTTP logging with path/method/status/duration
+- JWT bearer authentication with authorization policies (`ApiUser`, `AdminOnly`)
+- OpenTelemetry tracing and metrics instrumentation (OTLP exporter support)
+- Startup SQL migration runner for PostgreSQL (`infra/postgres/migrations`)
 - Liveness and readiness probes:
   - `GET /health/live`
   - `GET /health/ready`
 - OpenAPI/Swagger for development discovery
+
+## Configuration
+
+- `Persistence:Provider`
+  - `Postgres`: uses PostgreSQL repositories and auto-migration runner
+  - `InMemory`: uses in-memory repositories (default for development)
+- `ConnectionStrings:Postgres`: PostgreSQL connection string
+- `Jwt`: issuer, audience, signing key, token expiration
+- `OpenTelemetry`: service name, optional OTLP endpoint, optional console exporter
 
 ## Run Locally
 
@@ -54,17 +67,19 @@ Swagger UI: `http://localhost:5000/swagger` (port may vary by profile).
 - `DELETE /api/v1/products/{id}`
 - `POST /api/v1/payment/process`
 
+## Authorization Model
+
+- Anonymous:
+  - `POST /api/v1/auth/login`
+  - health endpoints
+- Requires `ApiUser` policy (authenticated):
+  - `users` and `products` endpoints
+- Requires `AdminOnly` policy (authenticated + admin role):
+  - `POST /api/v1/payment/process`
+
 ## Test Strategy
 
 - `src/tests` contains:
   - API integration tests (status codes, health probes, validation behavior)
   - focused unit tests for validation/result contracts
 - CI pipeline executes restore/build/test and collects coverage.
-
-## Next Enterprise Upgrades
-
-- Replace in-memory data adapters with PostgreSQL persistence + migrations
-- Add authN/authZ policy enforcement
-- Add OpenTelemetry traces/metrics export
-- Add contract tests and consumer-driven API tests
-- Add deployment manifests and environment-specific configuration matrix

@@ -1,6 +1,7 @@
 using App.Features.Payment.Application;
 using App.Features.Payment.Domain;
 using Shared;
+using Shared.Security;
 
 namespace App.Features.Payment.Presentation;
 
@@ -8,7 +9,9 @@ public static class PaymentEndpoints
 {
     public static void MapPayment(this IEndpointRouteBuilder endpoints)
     {
-        var group = endpoints.MapGroup("/payment").WithTags("Payment");
+        var group = endpoints.MapGroup("/payment")
+            .WithTags("Payment")
+            .RequireAuthorization(AuthPolicies.AdminOnly);
 
         group.MapPost("/process", async (IPaymentAppService paymentAppService, PaymentModel payment) =>
         {

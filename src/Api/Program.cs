@@ -26,13 +26,19 @@ builder.Services
     .AddCheck("self-live", () => HealthCheckResult.Healthy(), tags: new[] { "live" })
     .AddCheck("self-ready", () => HealthCheckResult.Healthy(), tags: new[] { "ready" });
 
-builder.Services.AddApplicationServices();
+builder.Services.AddApiSecurity(builder.Configuration);
+builder.Services.AddApiOpenTelemetry(builder.Configuration, builder.Environment);
+builder.Services.AddApplicationServices(builder.Configuration);
 
 var app = builder.Build();
+
+await app.ApplyInfrastructureAsync();
 
 app.UseMiddleware<CorrelationIdMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpLogging();
+app.UseAuthentication();
+app.UseAuthorization();
 
 if (app.Environment.IsDevelopment())
 {

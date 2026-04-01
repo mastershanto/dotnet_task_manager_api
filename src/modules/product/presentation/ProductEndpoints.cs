@@ -1,6 +1,7 @@
 using App.Features.Product.Application;
 using App.Features.Product.Domain;
 using Shared;
+using Shared.Security;
 
 namespace App.Features.Product.Presentation;
 
@@ -8,7 +9,9 @@ public static class ProductEndpoints
 {
     public static void MapProducts(this IEndpointRouteBuilder endpoints)
     {
-        var group = endpoints.MapGroup("/products").WithTags("Products");
+        var group = endpoints.MapGroup("/products")
+            .WithTags("Products")
+            .RequireAuthorization(AuthPolicies.ApiUser);
 
         group.MapGet("/", async (IProductService productService) =>
         {

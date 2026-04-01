@@ -7,15 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.5" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+    <PackageReference Include="Npgsql" Version="8.0.4" />
+    <PackageReference Include="OpenTelemetry.Exporter.Console" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Extensions.Hosting" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.AspNetCore" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.9.0" />
+    <PackageReference Include="OpenTelemetry.Instrumentation.Runtime" Version="1.9.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Include="../auth/**/*.cs" />
-    <Compile Include="../payment/**/*.cs" />
-    <Compile Include="../product/**/*.cs" />
-    <Compile Include="../user_data/**/*.cs" />
+    <Compile Include="../modules/auth/**/*.cs" />
+    <Compile Include="../modules/payment/**/*.cs" />
+    <Compile Include="../modules/product/**/*.cs" />
+    <Compile Include="../modules/user_data/**/*.cs" />
     <Compile Include="../shared/**/*.cs" />
   </ItemGroup>
 

@@ -8,7 +8,7 @@ public static class AuthEndpoints
 {
     public static void MapAuth(this IEndpointRouteBuilder endpoints)
     {
-        var group = endpoints.MapGroup("/auth").WithTags("Auth");
+        var group = endpoints.MapGroup("/auth").WithTags("Auth").AllowAnonymous();
 
         group.MapPost("/login", async (IAuthAppService authAppService, AuthenticationRequest request) =>
         {
