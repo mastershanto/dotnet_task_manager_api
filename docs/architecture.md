@@ -50,13 +50,17 @@ Located in `shared`:
 
 ## Persistence Architecture
 
+- Entity Framework Core 10 unified persistence engine in `BuildingBlocks.Persistence`.
 - Config-driven provider selection through `Persistence:Provider`:
-  - `InMemory` for local/testing flows
-  - `Postgres` for production flows
-- PostgreSQL adapters:
-  - `PostgresUserRepository`
-  - `PostgresProductRepository`
-  - `PostgresPaymentService`
+  - `InMemory`: EF Core InMemory database for rapid zero-dependency local/testing flows
+  - `Postgres`: `Npgsql.EntityFrameworkCore.PostgreSQL` with connection pooling (`AddDbContextPool`) and execution resilience (`EnableRetryOnFailure`) for production
+- Module repositories (powered by EF Core):
+  - `EfUserRepository`
+  - `EfProductRepository`
+  - `EfCategoryRepository`
+  - `EfPaymentService`
+- Centralized `AuditableEntityInterceptor` for automatic UTC timestamp auditing.
+- Automatic assembly discovery of entity configurations (`IEntityTypeConfiguration<T>`).
 - Startup migration runner applies ordered SQL files from `infra/postgres/migrations` and records executions in `schema_migrations`.
 
 ## Reliability and Operability

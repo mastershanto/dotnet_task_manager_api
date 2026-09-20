@@ -2,7 +2,7 @@ using Categories.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Categories.Data.Configurations;
+namespace BuildingBlocks.Persistence.Configurations;
 
 public class CategoryConfiguration : IEntityTypeConfiguration<CategoryModel>
 {

@@ -37,7 +37,6 @@ public static class DependencyInjection
             if (string.IsNullOrWhiteSpace(connectionString))
                 throw new InvalidOperationException("Connection string 'Postgres' is required when Persistence:Provider=Postgres.");
 
-            services.AddSingleton(sp => NpgsqlDataSource.Create(connectionString));
             services.AddSingleton<PostgresMigrationRunner>();
         }
 
