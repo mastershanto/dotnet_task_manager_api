@@ -1,6 +1,8 @@
 using Auth.Application;
 using Auth.Data;
 using Auth.Domain;
+using BuildingBlocks.Persistence;
+using BuildingBlocks.Persistence.Extensions;
 using Categories.Application;
 using Categories.Data;
 using Categories.Domain;
@@ -26,6 +28,9 @@ public static class DependencyInjection
 
         var persistence = configuration.GetSection(PersistenceOptions.SectionName).Get<PersistenceOptions>() ?? new PersistenceOptions();
 
+        // 1. Enterprise Entity Framework Core Persistence Engine
+        services.AddDatabasePersistence(configuration, persistence.IsPostgres);
+
         if (persistence.IsPostgres)
         {
             var connectionString = configuration.GetConnectionString("Postgres");
@@ -34,31 +39,22 @@ public static class DependencyInjection
 
             services.AddSingleton(sp => NpgsqlDataSource.Create(connectionString));
             services.AddSingleton<PostgresMigrationRunner>();
-
-            services.AddSingleton<IUserRepository, PostgresUserRepository>();
-            services.AddSingleton<IProductRepository, PostgresProductRepository>();
-            services.AddSingleton<ICategoryRepository, PostgresCategoryRepository>();
-            services.AddSingleton<IPaymentService, PostgresPaymentService>();
-        }
-        else
-        {
-            services.AddSingleton<IUserRepository, InMemoryUserRepository>();
-            services.AddSingleton<IProductRepository, InMemoryProductRepository>();
-            services.AddSingleton<ICategoryRepository, InMemoryCategoryRepository>();
-            services.AddSingleton<IPaymentService, PaymentService>();
         }
 
-        // Feature wiring
+        // 2. Feature Repositories (Powered by EF Core)
+        services.AddScoped<IUserRepository, EfUserRepository>();
+        services.AddScoped<IProductRepository, EfProductRepository>();
+        services.AddScoped<ICategoryRepository, EfCategoryRepository>();
+        services.AddScoped<IPaymentService, EfPaymentService>();
+
+        // 3. Feature Application Services
         services.AddSingleton<IAuthService, AuthService>();
         services.AddSingleton<IAuthAppService, AuthAppService>();
 
-        services.AddSingleton<IUserService, UserService>();
-
-        services.AddSingleton<IProductService, ProductService>();
-
-        services.AddSingleton<ICategoryService, CategoryService>();
-
-        services.AddSingleton<IPaymentAppService, PaymentAppService>();
+        services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IProductService, ProductService>();
+        services.AddScoped<ICategoryService, CategoryService>();
+        services.AddScoped<IPaymentAppService, PaymentAppService>();
 
         return services;
     }

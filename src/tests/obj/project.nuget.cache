@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Q9C4AEfg7Cs=",
+  "dgSpecHash": "7dm+V4CfOAw=",
   "success": true,
   "projectFilePath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,14 @@
     "/Users/masterShanto/.nuget/packages/microsoft.aspnetcore.openapi/10.0.1/microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.aspnetcore.testhost/10.0.5/microsoft.aspnetcore.testhost.10.0.5.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.codecoverage/17.14.1/microsoft.codecoverage.17.14.1.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.entityframeworkcore/10.0.5/microsoft.entityframeworkcore.10.0.5.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.5/microsoft.entityframeworkcore.abstractions.10.0.5.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.5/microsoft.entityframeworkcore.analyzers.10.0.5.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.entityframeworkcore.inmemory/10.0.5/microsoft.entityframeworkcore.inmemory.10.0.5.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.5/microsoft.entityframeworkcore.relational.10.0.5.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.extensions.apidescription.server/10.0.0/microsoft.extensions.apidescription.server.10.0.0.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.extensions.caching.abstractions/10.0.5/microsoft.extensions.caching.abstractions.10.0.5.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/microsoft.extensions.caching.memory/10.0.5/microsoft.extensions.caching.memory.10.0.5.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.extensions.configuration/10.0.5/microsoft.extensions.configuration.10.0.5.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.extensions.configuration.abstractions/10.0.5/microsoft.extensions.configuration.abstractions.10.0.5.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.extensions.configuration.binder/10.0.5/microsoft.extensions.configuration.binder.10.0.5.nupkg.sha512",
@@ -54,7 +61,8 @@
     "/Users/masterShanto/.nuget/packages/microsoft.testplatform.objectmodel/17.14.1/microsoft.testplatform.objectmodel.17.14.1.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/microsoft.testplatform.testhost/17.14.1/microsoft.testplatform.testhost.17.14.1.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
-    "/Users/masterShanto/.nuget/packages/npgsql/8.0.4/npgsql.8.0.4.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/npgsql/10.0.0/npgsql.10.0.0.nupkg.sha512",
+    "/Users/masterShanto/.nuget/packages/npgsql.entityframeworkcore.postgresql/10.0.0/npgsql.entityframeworkcore.postgresql.10.0.0.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/opentelemetry/1.9.0/opentelemetry.1.9.0.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/opentelemetry.api/1.9.0/opentelemetry.api.1.9.0.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/opentelemetry.api.providerbuilderextensions/1.9.0/opentelemetry.api.providerbuilderextensions.1.9.0.nupkg.sha512",
@@ -79,5 +87,42 @@
     "/Users/masterShanto/.nuget/packages/xunit.extensibility.execution/2.9.3/xunit.extensibility.execution.2.9.3.nupkg.sha512",
     "/Users/masterShanto/.nuget/packages/xunit.runner.visualstudio/3.1.4/xunit.runner.visualstudio.3.1.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "message": "Package 'Microsoft.OpenApi' 2.4.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'OpenTelemetry.Api' 1.9.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j",
+      "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
+      "libraryId": "OpenTelemetry.Api",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "message": "Package 'OpenTelemetry.Exporter.OpenTelemetryProtocol' 1.9.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
+      "warningLevel": 1,
+      "filePath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
+      "libraryId": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }
