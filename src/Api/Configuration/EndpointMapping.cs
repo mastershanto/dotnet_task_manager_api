@@ -1,4 +1,5 @@
 using Auth.Presentation;
+using Categories.Presentation;
 using Payments.Presentation;
 using Products.Presentation;
 using Users.Presentation;
@@ -14,6 +15,7 @@ public static class EndpointMapping
         v1.MapAuth();
         v1.MapUsers();
         v1.MapProducts();
+        v1.MapCategories();
         v1.MapPayment();
 
         return app;
@@ -25,6 +27,7 @@ public static class EndpointMapping
         app.MapAuth();
         app.MapUsers();
         app.MapProducts();
+        app.MapCategories();
         app.MapPayment();
 
         return app;

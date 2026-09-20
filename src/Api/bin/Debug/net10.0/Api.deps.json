@@ -13,6 +13,8 @@
           "BuildingBlocks.Abstractions": "1.0.0",
           "BuildingBlocks.Security": "1.0.0",
           "BuildingBlocks.Web": "1.0.0",
+          "Categories.Api": "1.0.0",
+          "Categories.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
           "Npgsql": "8.0.4",
@@ -390,6 +392,54 @@
       "BuildingBlocks.Web/1.0.0": {
         "runtime": {
           "BuildingBlocks.Web.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Categories.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Categories.Application": "1.0.0",
+          "Categories.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "runtime": {
+          "Categories.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Categories.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Categories.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Categories.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Categories.Domain/1.0.0": {
+        "runtime": {
+          "Categories.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Categories.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Categories.Domain": "1.0.0",
+          "Npgsql": "8.0.4"
+        },
+        "runtime": {
+          "Categories.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -775,6 +825,26 @@
       "sha512": ""
     },
     "BuildingBlocks.Web/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Categories.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Categories.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Categories.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Categories.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

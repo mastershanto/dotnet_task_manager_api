@@ -4,7 +4,7 @@ Production-oriented modular monolith built with ASP.NET Core Minimal APIs (.NET 
 
 ## Architecture At A Glance
 
-- Modular feature folders under `src/modules`: `auth`, `user_data`, `product`, `payment`
+- Modular feature folders under `src/modules`: `auth`, `user_data`, `product`, `category`, `payment`
 - Layered boundaries per feature:
   - `domain` for contracts/models
   - `application` for use-cases/services
@@ -65,6 +65,11 @@ Swagger UI: `http://localhost:5000/swagger` (port may vary by profile).
 - `POST /api/v1/products`
 - `PUT /api/v1/products/{id}`
 - `DELETE /api/v1/products/{id}`
+- `GET /api/v1/categories`
+- `GET /api/v1/categories/{id}`
+- `POST /api/v1/categories`
+- `PUT /api/v1/categories/{id}`
+- `DELETE /api/v1/categories/{id}`
 - `POST /api/v1/payment/process`
 
 ## Authorization Model

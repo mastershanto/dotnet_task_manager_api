@@ -22,12 +22,14 @@
   <ItemGroup>
     <!-- Module API Layer References -->
     <ProjectReference Include="../modules/auth/presentation/Auth.Api.csproj" />
+    <ProjectReference Include="../modules/category/presentation/Categories.Api.csproj" />
     <ProjectReference Include="../modules/payment/presentation/Payments.Api.csproj" />
     <ProjectReference Include="../modules/product/presentation/Products.Api.csproj" />
     <ProjectReference Include="../modules/user_data/presentation/Users.Api.csproj" />
 
     <!-- Module Infrastructure Layer References -->
     <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/category/data/Categories.Infrastructure.csproj" />
     <ProjectReference Include="../modules/payment/data/Payments.Infrastructure.csproj" />
     <ProjectReference Include="../modules/product/data/Products.Infrastructure.csproj" />
     <ProjectReference Include="../modules/user_data/data/Users.Infrastructure.csproj" />

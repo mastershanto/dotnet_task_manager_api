@@ -555,6 +555,65 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "Categories.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Categories.Application": "1.0.0",
+          "Categories.Domain": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Categories.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Categories.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Categories.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Categories.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Categories.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Categories.Application.dll": {}
+        }
+      },
+      "Categories.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Categories.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Categories.Domain.dll": {}
+        }
+      },
+      "Categories.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Categories.Domain": "1.0.0",
+          "Npgsql": "8.0.4"
+        },
+        "compile": {
+          "bin/placeholder/Categories.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Categories.Infrastructure.dll": {}
+        }
+      },
       "Payments.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1641,6 +1700,26 @@
       "path": "../BuildingBlocks/Web/BuildingBlocks.Web.csproj",
       "msbuildProject": "../BuildingBlocks/Web/BuildingBlocks.Web.csproj"
     },
+    "Categories.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/category/presentation/Categories.Api.csproj",
+      "msbuildProject": "../modules/category/presentation/Categories.Api.csproj"
+    },
+    "Categories.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/category/application/Categories.Application.csproj",
+      "msbuildProject": "../modules/category/application/Categories.Application.csproj"
+    },
+    "Categories.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/category/domain/Categories.Domain.csproj",
+      "msbuildProject": "../modules/category/domain/Categories.Domain.csproj"
+    },
+    "Categories.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/category/data/Categories.Infrastructure.csproj",
+      "msbuildProject": "../modules/category/data/Categories.Infrastructure.csproj"
+    },
     "Payments.Api/1.0.0": {
       "type": "project",
       "path": "../modules/payment/presentation/Payments.Api.csproj",
@@ -1709,6 +1788,8 @@
       "BuildingBlocks.Abstractions >= 1.0.0",
       "BuildingBlocks.Security >= 1.0.0",
       "BuildingBlocks.Web >= 1.0.0",
+      "Categories.Api >= 1.0.0",
+      "Categories.Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.5",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
       "Npgsql >= 8.0.4",
@@ -1766,6 +1847,12 @@
             },
             "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj": {
               "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj"
             },
             "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj": {
               "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj"
@@ -2281,5 +2368,37 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.OpenApi' 2.4.1 has a known high severity vulnerability, https://github.com/advisories/GHSA-v5pm-xwqc-g5wc",
+      "libraryId": "Microsoft.OpenApi",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenTelemetry.Api' 1.9.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-g94r-2vxg-569j",
+      "libraryId": "OpenTelemetry.Api",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'OpenTelemetry.Exporter.OpenTelemetryProtocol' 1.9.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4625-4j76-fww9",
+      "libraryId": "OpenTelemetry.Exporter.OpenTelemetryProtocol",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

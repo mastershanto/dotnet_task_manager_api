@@ -1,6 +1,9 @@
 using Auth.Application;
 using Auth.Data;
 using Auth.Domain;
+using Categories.Application;
+using Categories.Data;
+using Categories.Domain;
 using Payments.Application;
 using Payments.Data;
 using Payments.Domain;
@@ -34,12 +37,14 @@ public static class DependencyInjection
 
             services.AddSingleton<IUserRepository, PostgresUserRepository>();
             services.AddSingleton<IProductRepository, PostgresProductRepository>();
+            services.AddSingleton<ICategoryRepository, PostgresCategoryRepository>();
             services.AddSingleton<IPaymentService, PostgresPaymentService>();
         }
         else
         {
             services.AddSingleton<IUserRepository, InMemoryUserRepository>();
             services.AddSingleton<IProductRepository, InMemoryProductRepository>();
+            services.AddSingleton<ICategoryRepository, InMemoryCategoryRepository>();
             services.AddSingleton<IPaymentService, PaymentService>();
         }
 
@@ -50,6 +55,8 @@ public static class DependencyInjection
         services.AddSingleton<IUserService, UserService>();
 
         services.AddSingleton<IProductService, ProductService>();
+
+        services.AddSingleton<ICategoryService, CategoryService>();
 
         services.AddSingleton<IPaymentAppService, PaymentAppService>();
 
