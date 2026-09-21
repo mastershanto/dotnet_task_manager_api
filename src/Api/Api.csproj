@@ -26,6 +26,7 @@
     <ProjectReference Include="../modules/payment/presentation/Payments.Api.csproj" />
     <ProjectReference Include="../modules/product/presentation/Products.Api.csproj" />
     <ProjectReference Include="../modules/user_data/presentation/Users.Api.csproj" />
+    <ProjectReference Include="../modules/task/presentation/Tasks.Api.csproj" />
 
     <!-- Module Infrastructure Layer References -->
     <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />
@@ -33,6 +34,8 @@
     <ProjectReference Include="../modules/payment/data/Payments.Infrastructure.csproj" />
     <ProjectReference Include="../modules/product/data/Products.Infrastructure.csproj" />
     <ProjectReference Include="../modules/user_data/data/Users.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/task/data/Tasks.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/task/application/Tasks.Application.csproj" />
 
     <!-- BuildingBlocks References -->
     <ProjectReference Include="../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj" />

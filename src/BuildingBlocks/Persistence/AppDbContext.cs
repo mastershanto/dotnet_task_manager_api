@@ -1,6 +1,7 @@
 using Categories.Domain;
 using Payments.Domain;
 using Products.Domain;
+using Tasks.Domain;
 using Users.Domain;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
@@ -17,6 +18,7 @@ public class AppDbContext : DbContext
     public DbSet<ProductModel> Products => Set<ProductModel>();
     public DbSet<CategoryModel> Categories => Set<CategoryModel>();
     public DbSet<PaymentModel> Payments => Set<PaymentModel>();
+    public DbSet<TaskItemModel> Tasks => Set<TaskItemModel>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

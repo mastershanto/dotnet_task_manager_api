@@ -20,6 +20,7 @@
     <ProjectReference Include="../../modules/product/domain/Products.Domain.csproj" />
     <ProjectReference Include="../../modules/category/domain/Categories.Domain.csproj" />
     <ProjectReference Include="../../modules/payment/domain/Payments.Domain.csproj" />
+    <ProjectReference Include="../../modules/task/domain/Tasks.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -52,6 +52,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Categories.Infrastructure",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Categories.Api", "src\modules\category\presentation\Categories.Api.csproj", "{DD44DD44-4444-4444-4444-DD44DD44DD44}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Domain", "src\modules\task\domain\Tasks.Domain.csproj", "{EE11EE11-1111-1111-1111-EE11EE11EE11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Application", "src\modules\task\application\Tasks.Application.csproj", "{EE22EE22-2222-2222-2222-EE22EE22EE22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Infrastructure", "src\modules\task\data\Tasks.Infrastructure.csproj", "{EE33EE33-3333-3333-3333-EE33EE33EE33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tasks.Api", "src\modules\task\presentation\Tasks.Api.csproj", "{EE44EE44-4444-4444-4444-EE44EE44EE44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -158,6 +166,22 @@ Global
 		{DD44DD44-4444-4444-4444-DD44DD44DD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD44DD44-4444-4444-4444-DD44DD44DD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD44DD44-4444-4444-4444-DD44DD44DD44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE11EE11-1111-1111-1111-EE11EE11EE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE11EE11-1111-1111-1111-EE11EE11EE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE11EE11-1111-1111-1111-EE11EE11EE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE11EE11-1111-1111-1111-EE11EE11EE11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE22EE22-2222-2222-2222-EE22EE22EE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE22EE22-2222-2222-2222-EE22EE22EE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE22EE22-2222-2222-2222-EE22EE22EE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE22EE22-2222-2222-2222-EE22EE22EE22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE33EE33-3333-3333-3333-EE33EE33EE33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE33EE33-3333-3333-3333-EE33EE33EE33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE33EE33-3333-3333-3333-EE33EE33EE33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE33EE33-3333-3333-3333-EE33EE33EE33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE44EE44-4444-4444-4444-EE44EE44EE44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE44EE44-4444-4444-4444-EE44EE44EE44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE44EE44-4444-4444-4444-EE44EE44EE44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE44EE44-4444-4444-4444-EE44EE44EE44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

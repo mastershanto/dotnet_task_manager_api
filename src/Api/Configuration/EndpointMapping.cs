@@ -2,6 +2,7 @@ using Auth.Presentation;
 using Categories.Presentation;
 using Payments.Presentation;
 using Products.Presentation;
+using Tasks.Presentation;
 using Users.Presentation;
 
 namespace Api.Configuration;
@@ -17,6 +18,7 @@ public static class EndpointMapping
         v1.MapProducts();
         v1.MapCategories();
         v1.MapPayment();
+        v1.MapTasks();
 
         return app;
     }
@@ -29,6 +31,7 @@ public static class EndpointMapping
         app.MapProducts();
         app.MapCategories();
         app.MapPayment();
+        app.MapTasks();
 
         return app;
     }

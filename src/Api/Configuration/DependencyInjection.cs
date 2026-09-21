@@ -1,17 +1,23 @@
 using Auth.Application;
 using Auth.Data;
 using Auth.Domain;
+using BuildingBlocks.Behaviors;
 using BuildingBlocks.Persistence;
 using BuildingBlocks.Persistence.Extensions;
 using Categories.Application;
 using Categories.Data;
 using Categories.Domain;
+using FluentValidation;
+using MediatR;
 using Payments.Application;
 using Payments.Data;
 using Payments.Domain;
 using Products.Application;
 using Products.Data;
 using Products.Domain;
+using Tasks.Application.Features.Tasks.Commands.CreateTask;
+using Tasks.Data;
+using Tasks.Domain;
 using Users.Application;
 using Users.Data;
 using Users.Domain;
@@ -45,6 +51,7 @@ public static class DependencyInjection
         services.AddScoped<IProductRepository, EfProductRepository>();
         services.AddScoped<ICategoryRepository, EfCategoryRepository>();
         services.AddScoped<IPaymentService, EfPaymentService>();
+        services.AddScoped<ITaskRepository, EfTaskRepository>();
 
         // 3. Feature Application Services
         services.AddSingleton<IAuthService, AuthService>();
@@ -54,6 +61,18 @@ public static class DependencyInjection
         services.AddScoped<IProductService, ProductService>();
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IPaymentAppService, PaymentAppService>();
+
+        // 4. Enterprise CQRS Engine & Pipeline Behaviors (MediatR)
+        services.AddMediatR(cfg =>
+        {
+            cfg.RegisterServicesFromAssembly(typeof(CreateTaskCommand).Assembly);
+            cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
+            cfg.AddOpenBehavior(typeof(LoggingBehavior<,>));
+            cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
+        });
+
+        // 5. Cross-Cutting Automatic FluentValidation
+        services.AddValidatorsFromAssembly(typeof(CreateTaskCommandValidator).Assembly);
 
         return services;
     }

@@ -115,3 +115,16 @@
 /Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/BuildingBlocks.Persistence.dll
 /Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/BuildingBlocks.Persistence.pdb
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Api.staticwebassets.endpoints.json
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/FluentValidation.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/FluentValidation.DependencyInjectionExtensions.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/MediatR.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/MediatR.Contracts.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Api.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Application.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Domain.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Infrastructure.dll
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Api.pdb
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Infrastructure.pdb
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Application.pdb
+/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/bin/Debug/net10.0/Tasks.Domain.pdb
