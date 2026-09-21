@@ -15,6 +15,9 @@ using Payments.Domain;
 using Products.Application;
 using Products.Data;
 using Products.Domain;
+using Projects.Application.Features.Projects.Commands.CreateProject;
+using Projects.Data;
+using Projects.Domain;
 using Tasks.Application.Features.Tasks.Commands.CreateTask;
 using Tasks.Data;
 using Tasks.Domain;
@@ -52,6 +55,7 @@ public static class DependencyInjection
         services.AddScoped<ICategoryRepository, EfCategoryRepository>();
         services.AddScoped<IPaymentService, EfPaymentService>();
         services.AddScoped<ITaskRepository, EfTaskRepository>();
+        services.AddScoped<IProjectRepository, EfProjectRepository>();
 
         // 3. Feature Application Services
         services.AddSingleton<IAuthService, AuthService>();
@@ -66,6 +70,7 @@ public static class DependencyInjection
         services.AddMediatR(cfg =>
         {
             cfg.RegisterServicesFromAssembly(typeof(CreateTaskCommand).Assembly);
+            cfg.RegisterServicesFromAssembly(typeof(CreateProjectCommand).Assembly);
             cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
             cfg.AddOpenBehavior(typeof(LoggingBehavior<,>));
             cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
@@ -73,6 +78,7 @@ public static class DependencyInjection
 
         // 5. Cross-Cutting Automatic FluentValidation
         services.AddValidatorsFromAssembly(typeof(CreateTaskCommandValidator).Assembly);
+        services.AddValidatorsFromAssembly(typeof(CreateProjectCommandValidator).Assembly);
 
         return services;
     }

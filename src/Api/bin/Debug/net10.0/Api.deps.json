@@ -29,6 +29,9 @@
           "Payments.Infrastructure": "1.0.0",
           "Products.Api": "1.0.0",
           "Products.Infrastructure": "1.0.0",
+          "Projects.Api": "1.0.0",
+          "Projects.Application": "1.0.0",
+          "Projects.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "10.1.7",
           "Tasks.Api": "1.0.0",
           "Tasks.Application": "1.0.0",
@@ -493,6 +496,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
           "Payments.Domain": "1.0.0",
           "Products.Domain": "1.0.0",
+          "Projects.Domain": "1.0.0",
           "Tasks.Domain": "1.0.0",
           "Users.Domain": "1.0.0"
         },
@@ -662,6 +666,54 @@
         },
         "runtime": {
           "Products.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Projects.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Projects.Application": "1.0.0",
+          "Projects.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Projects.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Projects.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Projects.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Projects.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Projects.Domain/1.0.0": {
+        "runtime": {
+          "Projects.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Projects.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Projects.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Projects.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1127,6 +1179,26 @@
       "sha512": ""
     },
     "Products.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Projects.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Projects.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Projects.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Projects.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

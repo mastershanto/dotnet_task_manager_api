@@ -694,6 +694,7 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.0",
           "Payments.Domain": "1.0.0",
           "Products.Domain": "1.0.0",
+          "Projects.Domain": "1.0.0",
           "Tasks.Domain": "1.0.0",
           "Users.Domain": "1.0.0"
         },
@@ -906,6 +907,65 @@
         },
         "runtime": {
           "bin/placeholder/Products.Infrastructure.dll": {}
+        }
+      },
+      "Projects.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Projects.Application": "1.0.0",
+          "Projects.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projects.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projects.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Projects.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Projects.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projects.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projects.Application.dll": {}
+        }
+      },
+      "Projects.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Projects.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projects.Domain.dll": {}
+        }
+      },
+      "Projects.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Projects.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Projects.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Projects.Infrastructure.dll": {}
         }
       },
       "Tasks.Api/1.0.0": {
@@ -2159,6 +2219,26 @@
       "path": "../modules/product/data/Products.Infrastructure.csproj",
       "msbuildProject": "../modules/product/data/Products.Infrastructure.csproj"
     },
+    "Projects.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/project/presentation/Projects.Api.csproj",
+      "msbuildProject": "../modules/project/presentation/Projects.Api.csproj"
+    },
+    "Projects.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/project/application/Projects.Application.csproj",
+      "msbuildProject": "../modules/project/application/Projects.Application.csproj"
+    },
+    "Projects.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/project/domain/Projects.Domain.csproj",
+      "msbuildProject": "../modules/project/domain/Projects.Domain.csproj"
+    },
+    "Projects.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/project/data/Projects.Infrastructure.csproj",
+      "msbuildProject": "../modules/project/data/Projects.Infrastructure.csproj"
+    },
     "Tasks.Api/1.0.0": {
       "type": "project",
       "path": "../modules/task/presentation/Tasks.Api.csproj",
@@ -2223,6 +2303,9 @@
       "Payments.Infrastructure >= 1.0.0",
       "Products.Api >= 1.0.0",
       "Products.Infrastructure >= 1.0.0",
+      "Projects.Api >= 1.0.0",
+      "Projects.Application >= 1.0.0",
+      "Projects.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.1.7",
       "Tasks.Api >= 1.0.0",
       "Tasks.Application >= 1.0.0",
@@ -2291,6 +2374,15 @@
             },
             "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj": {
               "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj"
+            },
+            "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj": {
+              "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj"
             },
             "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj": {
               "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj"

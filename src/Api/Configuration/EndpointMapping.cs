@@ -2,6 +2,7 @@ using Auth.Presentation;
 using Categories.Presentation;
 using Payments.Presentation;
 using Products.Presentation;
+using Projects.Presentation;
 using Tasks.Presentation;
 using Users.Presentation;
 
@@ -19,6 +20,7 @@ public static class EndpointMapping
         v1.MapCategories();
         v1.MapPayment();
         v1.MapTasks();
+        v1.MapProjects();
 
         return app;
     }
@@ -32,6 +34,7 @@ public static class EndpointMapping
         app.MapCategories();
         app.MapPayment();
         app.MapTasks();
+        app.MapProjects();
 
         return app;
     }

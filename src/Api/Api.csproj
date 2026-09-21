@@ -27,6 +27,7 @@
     <ProjectReference Include="../modules/product/presentation/Products.Api.csproj" />
     <ProjectReference Include="../modules/user_data/presentation/Users.Api.csproj" />
     <ProjectReference Include="../modules/task/presentation/Tasks.Api.csproj" />
+    <ProjectReference Include="../modules/project/presentation/Projects.Api.csproj" />
 
     <!-- Module Infrastructure Layer References -->
     <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />
@@ -36,6 +37,8 @@
     <ProjectReference Include="../modules/user_data/data/Users.Infrastructure.csproj" />
     <ProjectReference Include="../modules/task/data/Tasks.Infrastructure.csproj" />
     <ProjectReference Include="../modules/task/application/Tasks.Application.csproj" />
+    <ProjectReference Include="../modules/project/data/Projects.Infrastructure.csproj" />
+    <ProjectReference Include="../modules/project/application/Projects.Application.csproj" />
 
     <!-- BuildingBlocks References -->
     <ProjectReference Include="../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj" />
