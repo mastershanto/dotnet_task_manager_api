@@ -1,31 +1,15 @@
-using Auth.Application;
-using Auth.Data;
-using Auth.Domain;
+using Api.Infrastructure.Persistence;
+using Auth.Presentation;
 using BuildingBlocks.Behaviors;
 using BuildingBlocks.Persistence;
 using BuildingBlocks.Persistence.Extensions;
-using Categories.Application;
-using Categories.Data;
-using Categories.Domain;
-using FluentValidation;
+using Categories.Presentation;
 using MediatR;
-using Payments.Application;
-using Payments.Data;
-using Payments.Domain;
-using Products.Application;
-using Products.Data;
-using Products.Domain;
-using Projects.Application.Features.Projects.Commands.CreateProject;
-using Projects.Data;
-using Projects.Domain;
-using Tasks.Application.Features.Tasks.Commands.CreateTask;
-using Tasks.Data;
-using Tasks.Domain;
-using Users.Application;
-using Users.Data;
-using Users.Domain;
-using Api.Infrastructure.Persistence;
-using Npgsql;
+using Payments.Presentation;
+using Products.Presentation;
+using Projects.Presentation;
+using Tasks.Presentation;
+using Users.Presentation;
 
 namespace Api.Configuration;
 
@@ -33,11 +17,10 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration configuration)
     {
+        // 1. Enterprise Persistence Configuration
         services.Configure<PersistenceOptions>(configuration.GetSection(PersistenceOptions.SectionName));
-
         var persistence = configuration.GetSection(PersistenceOptions.SectionName).Get<PersistenceOptions>() ?? new PersistenceOptions();
 
-        // 1. Enterprise Entity Framework Core Persistence Engine
         services.AddDatabasePersistence(configuration, persistence.IsPostgres);
 
         if (persistence.IsPostgres)
@@ -49,36 +32,22 @@ public static class DependencyInjection
             services.AddSingleton<PostgresMigrationRunner>();
         }
 
-        // 2. Feature Repositories (Powered by EF Core)
-        services.AddScoped<IUserRepository, EfUserRepository>();
-        services.AddScoped<IProductRepository, EfProductRepository>();
-        services.AddScoped<ICategoryRepository, EfCategoryRepository>();
-        services.AddScoped<IPaymentService, EfPaymentService>();
-        services.AddScoped<ITaskRepository, EfTaskRepository>();
-        services.AddScoped<IProjectRepository, EfProjectRepository>();
-
-        // 3. Feature Application Services
-        services.AddSingleton<IAuthService, AuthService>();
-        services.AddSingleton<IAuthAppService, AuthAppService>();
-
-        services.AddScoped<IUserService, UserService>();
-        services.AddScoped<IProductService, ProductService>();
-        services.AddScoped<ICategoryService, CategoryService>();
-        services.AddScoped<IPaymentAppService, PaymentAppService>();
-
-        // 4. Enterprise CQRS Engine & Pipeline Behaviors (MediatR)
+        // 2. Cross-Cutting Pipeline Behaviors (MediatR)
         services.AddMediatR(cfg =>
         {
-            cfg.RegisterServicesFromAssembly(typeof(CreateTaskCommand).Assembly);
-            cfg.RegisterServicesFromAssembly(typeof(CreateProjectCommand).Assembly);
             cfg.RegisterServicesFromAssembly(typeof(DependencyInjection).Assembly);
             cfg.AddOpenBehavior(typeof(LoggingBehavior<,>));
             cfg.AddOpenBehavior(typeof(ValidationBehavior<,>));
         });
 
-        // 5. Cross-Cutting Automatic FluentValidation
-        services.AddValidatorsFromAssembly(typeof(CreateTaskCommandValidator).Assembly);
-        services.AddValidatorsFromAssembly(typeof(CreateProjectCommandValidator).Assembly);
+        // 3. Decentralized Module Services (Each module manages its own dependencies)
+        services.AddAuthModule(configuration);
+        services.AddUsersModule(configuration);
+        services.AddProductsModule(configuration);
+        services.AddCategoriesModule(configuration);
+        services.AddPaymentsModule(configuration);
+        services.AddTasksModule(configuration);
+        services.AddProjectsModule(configuration);
 
         return services;
     }

@@ -10,32 +10,30 @@ namespace Api.Configuration;
 
 public static class EndpointMapping
 {
+    public static IEndpointRouteBuilder MapModuleEndpoints(this IEndpointRouteBuilder app)
+    {
+        app.MapAuthEndpoints();
+        app.MapUserEndpoints();
+        app.MapProductEndpoints();
+        app.MapCategoryEndpoints();
+        app.MapPaymentEndpoints();
+        app.MapTaskEndpoints();
+        app.MapProjectEndpoints();
+
+        return app;
+    }
+
     public static IEndpointRouteBuilder MapApiV1(this IEndpointRouteBuilder app)
     {
         var v1 = app.MapGroup("/api/v1");
-
-        v1.MapAuth();
-        v1.MapUsers();
-        v1.MapProducts();
-        v1.MapCategories();
-        v1.MapPayment();
-        v1.MapTasks();
-        v1.MapProjects();
-
+        v1.MapModuleEndpoints();
         return app;
     }
 
     public static IEndpointRouteBuilder MapLegacyRoutes(this IEndpointRouteBuilder app)
     {
         // Keep legacy routes for backward compatibility during migration.
-        app.MapAuth();
-        app.MapUsers();
-        app.MapProducts();
-        app.MapCategories();
-        app.MapPayment();
-        app.MapTasks();
-        app.MapProjects();
-
+        app.MapModuleEndpoints();
         return app;
     }
 }

@@ -20,7 +20,12 @@ public static class PersistenceBootstrapper
         {
             var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
             await dbContext.Database.EnsureCreatedAsync(cancellationToken);
-            AppDbContext.SeedData(dbContext);
+
+            var seeders = scope.ServiceProvider.GetServices<IModuleSeeder>().OrderBy(s => s.Order);
+            foreach (var seeder in seeders)
+            {
+                await seeder.SeedAsync(dbContext, cancellationToken);
+            }
         }
     }
 }

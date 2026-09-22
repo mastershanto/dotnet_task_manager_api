@@ -11,6 +11,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="../application/Products.Application.csproj" />
+    <ProjectReference Include="../data/Products.Infrastructure.csproj" />
     <ProjectReference Include="../domain/Products.Domain.csproj" />
     <ProjectReference Include="../../../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj" />
     <ProjectReference Include="../../../BuildingBlocks/Security/BuildingBlocks.Security.csproj" />

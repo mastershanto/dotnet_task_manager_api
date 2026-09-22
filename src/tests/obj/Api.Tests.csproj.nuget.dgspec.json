@@ -3178,6 +3178,9 @@
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj"
               },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj"
+              },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj"
               }
@@ -4695,6 +4698,9 @@
               },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj"
+              },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj"
               },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj"
@@ -6217,6 +6223,9 @@
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj"
               },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj"
+              },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj"
               }
@@ -7735,6 +7744,9 @@
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj"
               },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj"
+              },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj"
               }
@@ -9247,6 +9259,9 @@
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj"
               },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj"
+              },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj"
               }
@@ -10758,6 +10773,9 @@
               },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj"
+              },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj"
               },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj"
@@ -12276,6 +12294,9 @@
               },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj"
+              },
+              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj": {
+                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj"
               },
               "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
                 "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj"

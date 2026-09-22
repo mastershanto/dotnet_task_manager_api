@@ -426,6 +426,7 @@
         "dependencies": {
           "Auth.Application": "1.0.0",
           "Auth.Domain": "1.0.0",
+          "Auth.Infrastructure": "1.0.0",
           "BuildingBlocks.Abstractions": "1.0.0",
           "BuildingBlocks.Security": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
@@ -529,6 +530,7 @@
           "BuildingBlocks.Security": "1.0.0",
           "Categories.Application": "1.0.0",
           "Categories.Domain": "1.0.0",
+          "Categories.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1"
         },
@@ -579,7 +581,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
           "Payments.Application": "1.0.0",
-          "Payments.Domain": "1.0.0"
+          "Payments.Domain": "1.0.0",
+          "Payments.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Payments.Api.dll": {
@@ -629,7 +632,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
           "Products.Application": "1.0.0",
-          "Products.Domain": "1.0.0"
+          "Products.Domain": "1.0.0",
+          "Products.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Products.Api.dll": {
@@ -678,7 +682,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
           "Projects.Application": "1.0.0",
-          "Projects.Domain": "1.0.0"
+          "Projects.Domain": "1.0.0",
+          "Projects.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Projects.Api.dll": {
@@ -726,7 +731,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
           "Tasks.Application": "1.0.0",
-          "Tasks.Domain": "1.0.0"
+          "Tasks.Domain": "1.0.0",
+          "Tasks.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Tasks.Api.dll": {
@@ -774,7 +780,8 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
           "Users.Application": "1.0.0",
-          "Users.Domain": "1.0.0"
+          "Users.Domain": "1.0.0",
+          "Users.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Users.Api.dll": {
