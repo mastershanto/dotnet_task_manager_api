@@ -1,90 +1,97 @@
 {
   "format": 1,
   "restore": {
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj": {}
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\Api\\Api.csproj": {}
   },
   "projects": {
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\Api\\Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Web\\BuildingBlocks.Web.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Web\\BuildingBlocks.Web.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\presentation\\Auth.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\presentation\\Auth.Api.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\presentation\\Tasks.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\presentation\\Tasks.Api.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\presentation\\Users.Api.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\presentation\\Users.Api.csproj"
               }
             }
           }
@@ -165,7 +172,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -583,22 +590,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj",
         "projectName": "BuildingBlocks.Abstractions",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -656,7 +670,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -934,51 +948,58 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj"
               }
             }
           }
@@ -1032,7 +1053,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1310,22 +1331,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj",
         "projectName": "BuildingBlocks.Security",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1365,7 +1393,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1643,22 +1671,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Web\\BuildingBlocks.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Web\\BuildingBlocks.Web.csproj",
         "projectName": "BuildingBlocks.Web",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Web\\BuildingBlocks.Web.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Web\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1701,7 +1736,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -2119,33 +2154,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\application\\Auth.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\application\\Auth.Application.csproj",
         "projectName": "Auth.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\application\\Auth.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj"
               }
             }
           }
@@ -2181,7 +2223,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -2459,30 +2501,37 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj",
         "projectName": "Auth.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj"
               }
             }
           }
@@ -2536,7 +2585,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -2814,22 +2863,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj",
         "projectName": "Auth.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -2869,7 +2925,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -3147,42 +3203,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\presentation\\Auth.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\presentation\\Auth.Api.csproj",
         "projectName": "Auth.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\presentation\\Auth.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\application\\Auth.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\application\\Auth.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\data\\Auth.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\auth\\domain\\Auth.Domain.csproj"
               }
             }
           }
@@ -3231,7 +3294,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -3649,33 +3712,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\application\\Categories.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\application\\Categories.Application.csproj",
         "projectName": "Categories.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\application\\Categories.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj"
               }
             }
           }
@@ -3711,7 +3781,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -3989,33 +4059,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj",
         "projectName": "Categories.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj"
               }
             }
           }
@@ -4057,7 +4134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -4335,22 +4412,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj",
         "projectName": "Categories.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -4390,7 +4474,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -4668,42 +4752,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj",
         "projectName": "Categories.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\application\\Categories.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\application\\Categories.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\data\\Categories.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\domain\\Categories.Domain.csproj"
               }
             }
           }
@@ -4752,7 +4843,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -5170,36 +5261,43 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\application\\Payments.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\application\\Payments.Application.csproj",
         "projectName": "Payments.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\application\\Payments.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj"
               }
             }
           }
@@ -5235,7 +5333,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -5513,33 +5611,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj",
         "projectName": "Payments.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj"
               }
             }
           }
@@ -5581,7 +5686,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -5859,22 +5964,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj",
         "projectName": "Payments.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -5914,7 +6026,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -6192,42 +6304,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj",
         "projectName": "Payments.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\application\\Payments.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\application\\Payments.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\domain\\Payments.Domain.csproj"
               }
             }
           }
@@ -6276,7 +6395,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -6694,33 +6813,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\application\\Products.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\application\\Products.Application.csproj",
         "projectName": "Products.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\application\\Products.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj"
               }
             }
           }
@@ -6756,7 +6882,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -7034,33 +7160,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj",
         "projectName": "Products.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj"
               }
             }
           }
@@ -7102,7 +7235,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -7380,22 +7513,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj",
         "projectName": "Products.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -7435,7 +7575,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -7713,42 +7853,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj",
         "projectName": "Products.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\application\\Products.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\application\\Products.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\domain\\Products.Domain.csproj"
               }
             }
           }
@@ -7797,7 +7944,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -8215,33 +8362,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj",
         "projectName": "Projects.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj"
               }
             }
           }
@@ -8277,7 +8431,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -8555,33 +8709,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj",
         "projectName": "Projects.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj"
               }
             }
           }
@@ -8617,7 +8778,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -8895,22 +9056,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj",
         "projectName": "Projects.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -8950,7 +9118,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -9228,42 +9396,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj",
         "projectName": "Projects.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\data\\Projects.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\domain\\Projects.Domain.csproj"
               }
             }
           }
@@ -9312,7 +9487,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -9730,33 +9905,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj",
         "projectName": "Tasks.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj"
               }
             }
           }
@@ -9792,7 +9974,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -10070,33 +10252,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj",
         "projectName": "Tasks.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj"
               }
             }
           }
@@ -10132,7 +10321,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -10410,22 +10599,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj",
         "projectName": "Tasks.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -10465,7 +10661,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -10743,42 +10939,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\presentation\\Tasks.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\presentation\\Tasks.Api.csproj",
         "projectName": "Tasks.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\presentation\\Tasks.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\application\\Tasks.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\data\\Tasks.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\task\\domain\\Tasks.Domain.csproj"
               }
             }
           }
@@ -10827,7 +11030,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
@@ -11245,33 +11448,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\application\\Users.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\application\\Users.Application.csproj",
         "projectName": "Users.Application",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\application\\Users.Application.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj"
               }
             }
           }
@@ -11307,7 +11517,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -11585,33 +11795,40 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj",
         "projectName": "Users.Infrastructure",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Persistence\\BuildingBlocks.Persistence.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj"
               }
             }
           }
@@ -11653,7 +11870,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -11931,22 +12148,29 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj",
         "projectName": "Users.Domain",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -11986,7 +12210,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -12264,42 +12488,49 @@
         }
       }
     },
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj": {
+    "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\presentation\\Users.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj",
+        "projectUniqueName": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\presentation\\Users.Api.csproj",
         "projectName": "Users.Api",
-        "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj",
-        "packagesPath": "/Users/masterShanto/.nuget/packages/",
-        "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/obj/",
+        "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\presentation\\Users.Api.csproj",
+        "packagesPath": "c:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\.dotnet_home\\.nuget\\packages\\",
+        "outputPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\presentation\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Bd Calling\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Abstractions\\BuildingBlocks.Abstractions.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\BuildingBlocks\\Security\\BuildingBlocks.Security.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\application\\Users.Application.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\application\\Users.Application.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\data\\Users.Infrastructure.csproj"
               },
-              "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj": {
-                "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj"
+              "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj": {
+                "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\user_data\\domain\\Users.Domain.csproj"
               }
             }
           }
@@ -12348,7 +12579,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
