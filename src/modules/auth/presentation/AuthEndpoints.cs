@@ -1,7 +1,10 @@
-using Auth.Application;
+using Auth.Application.Features.Auth.Commands.Login;
 using Auth.Domain;
 using BuildingBlocks.Abstractions;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Routing;
 
 namespace Auth.Presentation;
 
@@ -11,13 +14,17 @@ public static class AuthEndpoints
     {
         var group = endpoints.MapGroup("/auth").WithTags("Auth").AllowAnonymous();
 
-        group.MapPost("/login", async (IAuthAppService authAppService, AuthenticationRequest request) =>
+        // POST /auth/login (COMMAND)
+        group.MapPost("/login", async (ISender sender, AuthenticationRequest request, CancellationToken cancellationToken) =>
         {
             var validation = Validation.Validate(request).ToArray();
             if (validation.Any())
+            {
                 return Results.ValidationProblem(Validation.ToErrorDictionary(validation));
+            }
 
-            var result = await authAppService.LoginAsync(request);
+            var command = new LoginCommand(request.Email, request.Password);
+            var result = await sender.Send(command, cancellationToken);
             return result.IsSuccess ? Results.Ok(result.Value) : Results.Unauthorized();
         })
         .Produces<AuthResult>(StatusCodes.Status200OK)

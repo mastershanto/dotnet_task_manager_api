@@ -2,40 +2,73 @@
 
 ## System Style
 
-This project follows a **modular monolith** architecture with feature-first organization and explicit layering per feature.
+This project follows a **modular monolith** architecture adhering to **Clean Architecture** principles and the **CQRS (Command Query Responsibility Segregation)** pattern with vertical-slice feature organization.
 
 ## Module Boundaries
 
-- `src/modules/auth`
-- `src/modules/user_data`
+- `src/modules/task`
+- `src/modules/project`
+- `src/modules/category`
 - `src/modules/product`
+- `src/modules/user_data`
 - `src/modules/payment`
+- `src/modules/auth`
 
-Each module has:
+## Clean Architecture & CQRS Layering per Module
 
-- `domain`: entities/contracts/interfaces
-- `application`: business workflows
-- `data`: storage/adapter implementations
-- `presentation`: HTTP endpoint registration
+Each module strictly follows explicit Clean Architecture layering and the inward dependency rule:
 
-## Cross-Cutting Concerns
+```
+[Presentation (Minimal APIs)]
+           ↓ (ISender)
+[Application (CQRS Commands & Queries, Handlers, Validators)]
+           ↓
+    [Domain (Core Models, Contracts, Interfaces)]
+           ↑
+[Data / Infrastructure (EF Core Repositories, DbContext, Configurations)]
+```
 
-Located in `shared`:
+### 1. `domain`
+- Pure domain models (`TaskItemModel`, `ProjectModel`, `CategoryModel`, `ProductModel`, `UserModel`, `PaymentModel`, `AuthResult`).
+- Repository and domain service interfaces (`ITaskRepository`, `IProjectRepository`, `ICategoryRepository`, `IProductRepository`, `IUserRepository`, etc.).
+- Zero external dependencies on UI or database frameworks.
 
-- `Result<T>` for uniform operation outcomes
-- `Validation` for DataAnnotations-based validation
-- `Http` middleware:
-  - correlation id propagation (`X-Correlation-ID`)
-  - global exception handling -> `ProblemDetails`
-- `Security` constants for authorization policy names
+### 2. `application`
+- Structured as vertical feature slices: `Features/<FeatureName>/Commands/` and `Features/<FeatureName>/Queries/`.
+- **Commands (Write Side)**: Implements `ICommand<T>` / `ICommand` and `ICommandHandler<TCommand, TResult>`. Changes state, enforces invariants, and persists via repositories.
+- **Queries (Read Side)**: Implements `IQuery<T>` and `IQueryHandler<TQuery, TResult>`. Read-optimized data retrieval.
+- **Validation**: Declarative rules implemented with FluentValidation (`AbstractValidator<T>`). Executed automatically via MediatR pipeline behaviors prior to handler execution.
+
+### 3. `data`
+- EF Core database configurations implementing `IEntityTypeConfiguration<T>`.
+- Repository implementations (`EfTaskRepository`, `EfProjectRepository`, `EfCategoryRepository`, `EfProductRepository`, `EfUserRepository`, `EfPaymentService`).
+- Execution resilience, query optimization (`AsNoTracking()`), and automatic auditing via `AuditableEntityInterceptor`.
+
+### 4. `presentation`
+- High-performance ASP.NET Core Minimal API endpoints with Swagger OpenAPI metadata.
+- Endpoints act purely as dispatchers: bind HTTP requests, dispatch commands or queries via MediatR `ISender`, and return standardized HTTP responses.
+- Decentralized module dependency injection extension methods (`Add<Module>Module()`, `Map<Module>Endpoints()`).
+
+## Cross-Cutting Concerns & Pipeline Behaviors
+
+Located in `BuildingBlocks` (`BuildingBlocks.Abstractions`, `BuildingBlocks.Persistence`, `BuildingBlocks.Security`):
+
+- **MediatR Pipeline Behaviors**:
+  - `LoggingBehavior<TRequest, TResponse>`: Performance tracking and structured logging.
+  - `ValidationBehavior<TRequest, TResponse>`: Automatic validation using registered FluentValidation validators.
+- **Result Pattern**: `Result<T>` for predictable, exception-free failure/success handling.
+- **Security**: Centralized policy definitions (`AuthPolicies.ApiUser`, `AuthPolicies.AdminOnly`).
+- **HTTP Middleware**:
+  - Correlation ID propagation (`X-Correlation-ID`).
+  - Global exception handling producing standard RFC 7807 `ProblemDetails`.
 
 ## API Composition
 
-- Startup and wiring live in `src/Api`.
+- Startup and host wiring live in `src/Api`.
 - DI registration is centralized in `Api/Configuration/DependencyInjection.cs`.
 - Endpoint composition is centralized in `Api/Configuration/EndpointMapping.cs`.
 - Public API is versioned under `/api/v1`.
-- Legacy route mapping is retained for backward compatibility.
+- Backward-compatible route mapping preserved for legacy clients.
 
 ## Security Architecture
 
@@ -45,8 +78,8 @@ Located in `shared`:
   - `AdminOnly`: authenticated principal with `admin` role claim
 - Endpoint policy model:
   - auth login and health endpoints are anonymous
-  - user/product endpoints require `ApiUser`
-  - payment endpoint requires `AdminOnly`
+  - tasks, projects, categories, users, products require `ApiUser`
+  - payment processing requires `AdminOnly`
 
 ## Persistence Architecture
 
@@ -54,11 +87,6 @@ Located in `shared`:
 - Config-driven provider selection through `Persistence:Provider`:
   - `InMemory`: EF Core InMemory database for rapid zero-dependency local/testing flows
   - `Postgres`: `Npgsql.EntityFrameworkCore.PostgreSQL` with connection pooling (`AddDbContextPool`) and execution resilience (`EnableRetryOnFailure`) for production
-- Module repositories (powered by EF Core):
-  - `EfUserRepository`
-  - `EfProductRepository`
-  - `EfCategoryRepository`
-  - `EfPaymentService`
 - Centralized `AuditableEntityInterceptor` for automatic UTC timestamp auditing.
 - Automatic assembly discovery of entity configurations (`IEntityTypeConfiguration<T>`).
 - Startup migration runner applies ordered SQL files from `infra/postgres/migrations` and records executions in `schema_migrations`.
@@ -68,26 +96,11 @@ Located in `shared`:
 - Health endpoints:
   - liveness: `/health/live`
   - readiness: `/health/ready`
-- Structured HTTP request logging with duration
-- Correlation-id included in response headers and logging scope
-- OpenTelemetry tracing + metrics:
-  - ASP.NET Core instrumentation
-  - HTTP client instrumentation
-  - runtime metrics instrumentation
-  - optional OTLP exporter
+- Structured HTTP request logging with duration.
+- Correlation-ID included in response headers and logging scope.
+- OpenTelemetry tracing and metrics instrumentation.
 
 ## Testing Model
 
-- Integration tests verify endpoint behavior and middleware contracts.
-- Unit tests validate shared primitives and business invariants.
-- CI pipeline runs restore/build/test with coverage collection.
-
-## Scalability Notes
-
-Current architecture is prepared for production with PostgreSQL persistence and migration automation.
-For higher scale and enterprise growth, next priorities are:
-
-- transactional boundaries per use-case
-- optimistic concurrency controls
-- cache + outbox patterns where required
-- asynchronous messaging for inter-module integration
+- **CQRS Handler Tests**: Unit tests verifying commands, queries, and validators in isolation with mock/fake repositories (`TaskCqrsTests`, `ProjectCqrsTests`, `CategoryCqrsTests`, `ProductCqrsTests`, `UserCqrsTests`).
+- **Integration Tests**: WebApplicationFactory end-to-end tests validating HTTP status codes, authorization policies, and middleware contracts (`CategoryEndpointsTests`, `UserEndpointsTests`).
