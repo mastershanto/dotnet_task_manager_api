@@ -110,4 +110,16 @@ public class TaskCqrsTests
         Assert.True(result.IsSuccess);
         Assert.True(result.Value);
     }
+
+    [Fact]
+    public void DeleteTaskValidator_Fails_WhenIdIsEmpty()
+    {
+        var validator = new DeleteTaskCommandValidator();
+        var command = new DeleteTaskCommand(Guid.Empty);
+
+        var validationResult = validator.Validate(command);
+
+        Assert.False(validationResult.IsValid);
+        Assert.Contains(validationResult.Errors, e => e.PropertyName == nameof(DeleteTaskCommand.Id));
+    }
 }

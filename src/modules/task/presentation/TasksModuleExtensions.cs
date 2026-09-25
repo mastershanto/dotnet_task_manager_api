@@ -1,3 +1,4 @@
+using BuildingBlocks.Persistence;
 using FluentValidation;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
@@ -12,8 +13,9 @@ public static class TasksModuleExtensions
 {
     public static IServiceCollection AddTasksModule(this IServiceCollection services, IConfiguration configuration)
     {
-        // 1. Module Repositories
+        // 1. Module Repositories & Seeders
         services.AddScoped<ITaskRepository, EfTaskRepository>();
+        services.AddScoped<IModuleSeeder, TaskModuleSeeder>();
 
         // 2. CQRS MediatR Handlers
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(CreateTaskCommand).Assembly));
