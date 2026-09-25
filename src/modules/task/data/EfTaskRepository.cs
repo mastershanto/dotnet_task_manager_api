@@ -4,13 +4,14 @@ using Tasks.Domain;
 
 namespace Tasks.Data;
 
+
 /// <summary>
 /// Entity Framework Core Task Repository (Infrastructure Data Access):
 /// </summary>
 public class EfTaskRepository : ITaskRepository
 {
-    private readonly AppDbContext _context;
 
+    private readonly AppDbContext _context;
     public EfTaskRepository(AppDbContext context)
     {
         _context = context;
@@ -24,12 +25,15 @@ public class EfTaskRepository : ITaskRepository
             .ToListAsync(cancellationToken);
     }
 
+
     public async Task<TaskItemModel?> GetAsync(Guid id, CancellationToken cancellationToken = default)
     {
         return await _context.Tasks
             .AsNoTracking()
             .FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
     }
+
+   
 
     public async Task<TaskItemModel> CreateAsync(TaskItemModel task, CancellationToken cancellationToken = default)
     {
@@ -43,6 +47,9 @@ public class EfTaskRepository : ITaskRepository
         await _context.SaveChangesAsync(cancellationToken);
         return item;
     }
+
+
+ 
 
     public async Task<TaskItemModel?> UpdateAsync(Guid id, TaskItemModel task, CancellationToken cancellationToken = default)
     {
@@ -71,6 +78,8 @@ public class EfTaskRepository : ITaskRepository
         return updated;
     }
 
+
+
     public async Task<bool> DeleteAsync(Guid id, CancellationToken cancellationToken = default)
     {
         var existing = await _context.Tasks.FindAsync(new object[] { id }, cancellationToken);
@@ -83,4 +92,6 @@ public class EfTaskRepository : ITaskRepository
         await _context.SaveChangesAsync(cancellationToken);
         return true;
     }
-}
+
+
+    }
