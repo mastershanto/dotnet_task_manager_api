@@ -14,6 +14,10 @@ public class UserConfiguration : IEntityTypeConfiguration<UserModel>
         builder.Property(u => u.Name).HasColumnName("name").HasMaxLength(100).IsRequired();
         builder.Property(u => u.Email).HasColumnName("email").HasMaxLength(255).IsRequired();
         builder.HasIndex(u => u.Email).IsUnique();
+        builder.Property(u => u.PasswordHash).HasColumnName("password_hash").HasMaxLength(500).IsRequired();
+        builder.Property(u => u.Role).HasColumnName("role").HasMaxLength(50).HasDefaultValue("user").IsRequired();
+        builder.Property(u => u.IsEmailVerified).HasColumnName("is_email_verified").HasDefaultValue(false).IsRequired();
         builder.Property(u => u.CreatedAt).HasColumnName("created_at").IsRequired();
+        builder.Property(u => u.UpdatedAt).HasColumnName("updated_at");
     }
 }

@@ -442,7 +442,8 @@
       "Auth.Application/1.0.0": {
         "dependencies": {
           "Auth.Domain": "1.0.0",
-          "BuildingBlocks.Abstractions": "1.0.0"
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Users.Domain": "1.0.0"
         },
         "runtime": {
           "Auth.Application.dll": {
@@ -452,6 +453,9 @@
         }
       },
       "Auth.Domain/1.0.0": {
+        "dependencies": {
+          "Users.Domain": "1.0.0"
+        },
         "runtime": {
           "Auth.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
@@ -462,6 +466,7 @@
       "Auth.Infrastructure/1.0.0": {
         "dependencies": {
           "Auth.Domain": "1.0.0",
+          "BuildingBlocks.Persistence": "1.0.0",
           "Microsoft.IdentityModel.Tokens": "8.0.1",
           "Npgsql": "10.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.1"
@@ -517,6 +522,9 @@
         }
       },
       "BuildingBlocks.Web/1.0.0": {
+        "dependencies": {
+          "FluentValidation": "11.11.0"
+        },
         "runtime": {
           "BuildingBlocks.Web.dll": {
             "assemblyVersion": "1.0.0.0",

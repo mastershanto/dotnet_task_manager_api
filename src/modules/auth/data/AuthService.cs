@@ -1,54 +1,47 @@
 using Auth.Domain;
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace Auth.Data;
 
+/// <summary>
+/// প্রমাণীকরণ সার্ভিস ইমপ্লিমেন্টেশন (Facade for Legacy / Direct Calls):
+/// ডাটাবেসের ইউজার ও পাসওয়ার্ড ভেরিফাই করে JWT টোকেন প্রদান করে।
+/// </summary>
 public class AuthService : IAuthService
 {
-    private const string DemoEmail = "admin@example.com";
-    private const string DemoPassword = "Password123";
-    private readonly JwtOptions _jwtOptions;
+    private readonly IAuthRepository _authRepository;
+    private readonly IPasswordHasherService _hasher;
+    private readonly ITokenService _tokenService;
 
-    public AuthService(IOptions<JwtOptions> jwtOptions)
+    public AuthService(
+        IAuthRepository authRepository,
+        IPasswordHasherService hasher,
+        ITokenService tokenService)
     {
-        _jwtOptions = jwtOptions.Value;
+        _authRepository = authRepository;
+        _hasher = hasher;
+        _tokenService = tokenService;
     }
 
-    public Task<AuthResult> AuthenticateAsync(AuthenticationRequest request)
+    public async Task<AuthResult> AuthenticateAsync(AuthenticationRequest request)
     {
-        if (request.Email.Equals(DemoEmail, StringComparison.OrdinalIgnoreCase) && request.Password == DemoPassword)
+        var user = await _authRepository.GetUserByEmailAsync(request.Email);
+        if (user is null)
         {
-            var now = DateTime.UtcNow;
-            var expiresAt = now.AddMinutes(_jwtOptions.TokenExpirationMinutes);
-
-            var claims = new List<Claim>
-            {
-                new(JwtRegisteredClaimNames.Sub, request.Email),
-                new(JwtRegisteredClaimNames.Email, request.Email),
-                new(ClaimTypes.Name, request.Email),
-                new(ClaimTypes.Role, "admin"),
-                new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString("N"))
-            };
-
-            var signingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtOptions.SigningKey));
-            var signingCredentials = new SigningCredentials(signingKey, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: _jwtOptions.Issuer,
-                audience: _jwtOptions.Audience,
-                claims: claims,
-                notBefore: now,
-                expires: expiresAt,
-                signingCredentials: signingCredentials);
-
-            var tokenValue = new JwtSecurityTokenHandler().WriteToken(token);
-            return Task.FromResult(new AuthResult(true, "Logged in", tokenValue));
+            return new AuthResult(false, "Invalid email or password", null);
         }
 
-        return Task.FromResult(new AuthResult(false, "Invalid credentials", null));
+        var isPasswordValid = _hasher.VerifyPassword(request.Password, user.PasswordHash);
+        if (!isPasswordValid)
+        {
+            return new AuthResult(false, "Invalid email or password", null);
+        }
+
+        if (!user.IsEmailVerified)
+        {
+            return new AuthResult(false, "Please verify your email via OTP first.", null);
+        }
+
+        var token = _tokenService.GenerateToken(user);
+        return new AuthResult(true, "Authentication successful", token);
     }
 }

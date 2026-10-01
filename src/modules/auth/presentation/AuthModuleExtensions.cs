@@ -1,5 +1,5 @@
 using Auth.Application;
-using Auth.Application.Features.Auth.Commands.Login;
+using Auth.Application.Features.Auth.Commands.Register;
 using Auth.Data;
 using Auth.Domain;
 using FluentValidation;
@@ -13,15 +13,21 @@ public static class AuthModuleExtensions
 {
     public static IServiceCollection AddAuthModule(this IServiceCollection services, IConfiguration configuration)
     {
-        // 1. Module Services
-        services.AddSingleton<IAuthService, AuthService>();
-        services.AddSingleton<IAuthAppService, AuthAppService>();
+        // 1. Repositories & Security Services
+        services.AddScoped<IAuthRepository, EfAuthRepository>();
+        services.AddSingleton<IPasswordHasherService, PasswordHasherService>();
+        services.AddSingleton<ITokenService, JwtTokenService>();
+        services.AddSingleton<IOtpService, OtpService>();
 
-        // 2. CQRS MediatR Handlers
-        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(LoginCommand).Assembly));
+        // 2. Legacy / Facade Services
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IAuthAppService, AuthAppService>();
 
-        // 3. Validators
-        services.AddValidatorsFromAssembly(typeof(LoginCommandValidator).Assembly);
+        // 3. CQRS MediatR Handlers
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(RegisterCommand).Assembly));
+
+        // 4. Validators
+        services.AddValidatorsFromAssembly(typeof(RegisterCommandValidator).Assembly);
 
         return services;
     }

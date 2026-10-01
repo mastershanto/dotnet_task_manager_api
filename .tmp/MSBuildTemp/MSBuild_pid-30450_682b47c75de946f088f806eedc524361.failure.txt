@@ -1,0 +1,8 @@
+UNHANDLED EXCEPTIONS FROM PROCESS 30450:
+=====================
+2/10/2026 2:37:30 AM
+System.IO.IOException: Pipe is broken.
+   at System.IO.Pipes.NamedPipeServerStream.CheckConnectOperationsServer()
+   at System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync(CancellationToken cancellationToken)
+   at Microsoft.Build.BackEnd.NodeEndpointOutOfProcBase.PacketPumpProc()
+===================

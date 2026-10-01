@@ -1,3 +1,4 @@
+using Auth.Domain;
 using Categories.Domain;
 using Payments.Domain;
 using Products.Domain;
@@ -16,6 +17,7 @@ public class AppDbContext : DbContext
     }
 
     public DbSet<UserModel> Users => Set<UserModel>();
+    public DbSet<OtpCodeModel> OtpCodes => Set<OtpCodeModel>();
     public DbSet<ProductModel> Products => Set<ProductModel>();
     public DbSet<CategoryModel> Categories => Set<CategoryModel>();
     public DbSet<PaymentModel> Payments => Set<PaymentModel>();
@@ -32,10 +34,42 @@ public class AppDbContext : DbContext
 
     private static readonly object _seedLock = new();
 
+    private static readonly string DefaultPasswordHash = HashPasswordForSeed("Password123");
+
+    private static string HashPasswordForSeed(string password)
+    {
+        var salt = new byte[16] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 };
+        var hash = System.Security.Cryptography.Rfc2898DeriveBytes.Pbkdf2(
+            password,
+            salt,
+            100_000,
+            System.Security.Cryptography.HashAlgorithmName.SHA256,
+            32);
+
+        return $"{Convert.ToBase64String(salt)}:{Convert.ToBase64String(hash)}:100000";
+    }
+
     public static void SeedData(AppDbContext context)
     {
         lock (_seedLock)
         {
+            var adminId = Guid.Parse("00000000-0000-0000-0000-000000000000");
+            if (!context.Users.Any(u => u.Email == "admin@example.com"))
+            {
+                context.Users.Add(
+                    new UserModel
+                    {
+                        Id = adminId,
+                        Name = "Admin",
+                        Email = "admin@example.com",
+                        PasswordHash = DefaultPasswordHash,
+                        Role = "admin",
+                        IsEmailVerified = true,
+                        CreatedAt = DateTime.UtcNow
+                    }
+                );
+            }
+
             var aliceId = Guid.Parse("00000000-0000-0000-0000-000000000001");
             if (!context.Users.Any(u => u.Id == aliceId))
             {
@@ -45,6 +79,9 @@ public class AppDbContext : DbContext
                         Id = aliceId,
                         Name = "Alice",
                         Email = "alice@example.com",
+                        PasswordHash = DefaultPasswordHash,
+                        Role = "user",
+                        IsEmailVerified = true,
                         CreatedAt = DateTime.UtcNow
                     },
                     new UserModel
@@ -52,6 +89,9 @@ public class AppDbContext : DbContext
                         Id = Guid.Parse("00000000-0000-0000-0000-000000000002"),
                         Name = "Bob",
                         Email = "bob@example.com",
+                        PasswordHash = DefaultPasswordHash,
+                        Role = "user",
+                        IsEmailVerified = true,
                         CreatedAt = DateTime.UtcNow
                     }
                 );

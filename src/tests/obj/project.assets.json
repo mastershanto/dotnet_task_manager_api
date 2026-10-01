@@ -1788,7 +1788,8 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Auth.Domain": "1.0.0",
-          "BuildingBlocks.Abstractions": "1.0.0"
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Users.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Auth.Application.dll": {}
@@ -1800,6 +1801,9 @@
       "Auth.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Users.Domain": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Auth.Domain.dll": {}
         },
@@ -1812,7 +1816,8 @@
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "Auth.Domain": "1.0.0",
-          "Microsoft.Extensions.Options": "10.0.0",
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Microsoft.Extensions.Options": "10.0.5",
           "Microsoft.IdentityModel.Tokens": "8.0.1",
           "Npgsql": "10.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.0.1"
@@ -1877,6 +1882,9 @@
       "BuildingBlocks.Web/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "FluentValidation": "11.11.0"
+        },
         "compile": {
           "bin/placeholder/BuildingBlocks.Web.dll": {}
         },
@@ -4993,7 +5001,7 @@
     ]
   },
   "packageFolders": {
-    "/Users/masterShanto/.nuget/packages/": {}
+    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -5001,11 +5009,11 @@
       "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
       "projectName": "Api.Tests",
       "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/Api.Tests.csproj",
-      "packagesPath": "/Users/masterShanto/.nuget/packages/",
+      "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
       "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
+        "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
