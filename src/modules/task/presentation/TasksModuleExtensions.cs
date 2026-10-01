@@ -11,7 +11,8 @@ namespace Tasks.Presentation;
 
 public static class TasksModuleExtensions
 {
-    public static IServiceCollection AddTasksModule(this IServiceCollection services, IConfiguration configuration)
+    public static IServiceCollection AddTasksModule(this IServiceCollection services, 
+    IConfiguration configuration)
     {
         // 1. Module Repositories & Seeders
         services.AddScoped<ITaskRepository, EfTaskRepository>();
