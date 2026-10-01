@@ -20,4 +20,8 @@ public class GetTaskByIdQueryHandler : IQueryHandler<GetTaskByIdQuery, TaskItemM
             ? Result<TaskItemModel>.Failure($"Task with ID '{request.Id}' was not found.") 
             : Result<TaskItemModel>.Success(task);
     }
+
 }
+
+
+
