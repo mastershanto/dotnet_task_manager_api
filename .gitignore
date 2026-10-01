@@ -6,3 +6,4 @@ TestResults/
 *.suo
 *.swp
 .DS_Store
+.tmp/
