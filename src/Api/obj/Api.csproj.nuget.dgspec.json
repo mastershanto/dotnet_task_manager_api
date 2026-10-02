@@ -10,11 +10,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj",
         "projectName": "Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -589,11 +589,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj",
         "projectName": "BuildingBlocks.Abstractions",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Abstractions/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -940,11 +940,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj",
         "projectName": "BuildingBlocks.Persistence",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/BuildingBlocks.Persistence.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -1316,11 +1316,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj",
         "projectName": "BuildingBlocks.Security",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/BuildingBlocks.Security.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Security/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -1649,11 +1649,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj",
         "projectName": "BuildingBlocks.Web",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/BuildingBlocks.Web.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/BuildingBlocks/Web/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -2131,11 +2131,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj",
         "projectName": "Auth.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/Auth.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -2474,11 +2474,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj",
         "projectName": "Auth.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/Auth.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -2832,11 +2832,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj",
         "projectName": "Auth.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/Auth.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -3169,11 +3169,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj",
         "projectName": "Auth.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/Auth.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/auth/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -3671,11 +3671,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj",
         "projectName": "Categories.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/Categories.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -4011,11 +4011,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj",
         "projectName": "Categories.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/Categories.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -4357,11 +4357,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj",
         "projectName": "Categories.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/Categories.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -4690,11 +4690,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj",
         "projectName": "Categories.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/Categories.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/category/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -5192,11 +5192,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj",
         "projectName": "Payments.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/Payments.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -5535,11 +5535,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj",
         "projectName": "Payments.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/Payments.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -5881,11 +5881,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj",
         "projectName": "Payments.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/Payments.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -6214,11 +6214,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj",
         "projectName": "Payments.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/Payments.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/payment/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -6716,11 +6716,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj",
         "projectName": "Products.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/Products.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -7056,11 +7056,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj",
         "projectName": "Products.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/Products.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -7402,11 +7402,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj",
         "projectName": "Products.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/Products.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -7735,11 +7735,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj",
         "projectName": "Products.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/Products.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/product/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -8237,11 +8237,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj",
         "projectName": "Projects.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/Projects.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -8577,11 +8577,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj",
         "projectName": "Projects.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/Projects.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -8917,11 +8917,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj",
         "projectName": "Projects.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/Projects.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -9250,11 +9250,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj",
         "projectName": "Projects.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/Projects.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/project/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -9752,11 +9752,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj",
         "projectName": "Tasks.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/Tasks.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -10092,11 +10092,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj",
         "projectName": "Tasks.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/Tasks.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -10432,11 +10432,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj",
         "projectName": "Tasks.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/Tasks.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -10765,11 +10765,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj",
         "projectName": "Tasks.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/Tasks.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/task/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -11267,11 +11267,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj",
         "projectName": "Users.Application",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/Users.Application.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -11607,11 +11607,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj",
         "projectName": "Users.Infrastructure",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/Users.Infrastructure.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -11953,11 +11953,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj",
         "projectName": "Users.Domain",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/Users.Domain.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -12286,11 +12286,11 @@
         "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj",
         "projectName": "Users.Api",
         "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/Users.Api.csproj",
-        "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+        "packagesPath": "/Users/masterShanto/.nuget/packages/",
         "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/modules/user_data/presentation/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+          "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"

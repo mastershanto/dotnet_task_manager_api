@@ -19,14 +19,10 @@ public static class AuthModuleExtensions
         services.AddSingleton<ITokenService, JwtTokenService>();
         services.AddSingleton<IOtpService, OtpService>();
 
-        // 2. Legacy / Facade Services
-        services.AddScoped<IAuthService, AuthService>();
-        services.AddScoped<IAuthAppService, AuthAppService>();
-
-        // 3. CQRS MediatR Handlers
+        // 2. CQRS MediatR Handlers
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(RegisterCommand).Assembly));
 
-        // 4. Validators
+        // 3. Validators
         services.AddValidatorsFromAssembly(typeof(RegisterCommandValidator).Assembly);
 
         return services;

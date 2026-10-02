@@ -1,6 +1,7 @@
 using System.Net;
 using System.Net.Http.Headers;
 using System.Net.Http.Json;
+using Auth.Application.Models;
 using Auth.Domain;
 using Auth.Presentation;
 using Microsoft.AspNetCore.Mvc.Testing;

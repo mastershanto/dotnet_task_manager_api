@@ -29,7 +29,7 @@ Each module strictly follows explicit Clean Architecture layering and the inward
 ```
 
 ### 1. `domain`
-- Pure domain models (`TaskItemModel`, `ProjectModel`, `CategoryModel`, `ProductModel`, `UserModel`, `PaymentModel`, `AuthResult`).
+- Pure domain models (`TaskItemModel`, `ProjectModel`, `CategoryModel`, `ProductModel`, `UserModel`, `PaymentModel`, `OtpCodeModel`).
 - Repository and domain service interfaces (`ITaskRepository`, `IProjectRepository`, `ICategoryRepository`, `IProductRepository`, `IUserRepository`, etc.).
 - Zero external dependencies on UI or database frameworks.
 

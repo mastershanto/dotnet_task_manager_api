@@ -9,6 +9,7 @@ using Auth.Application.Features.Auth.Commands.UpdateProfile;
 using Auth.Application.Features.Auth.Commands.VerifyRegistrationOtp;
 using Auth.Application.Features.Auth.Commands.VerifyResetOtp;
 using Auth.Application.Features.Auth.Queries.GetProfile;
+using Auth.Application.Models;
 using Auth.Domain;
 using BuildingBlocks.Security;
 using MediatR;
@@ -17,11 +18,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 
 namespace Auth.Presentation;
-
-// Profile Endpoint Request Records
-public record UpdateProfileRequest(string Name);
-public record ChangePasswordRequest(string CurrentPassword, string NewPassword);
-public record DeleteAccountRequest(string Password);
 
 /// <summary>
 /// প্রমাণীকরণ ও প্রোফাইল API এন্ডপয়েন্ট (Clean Architecture Presentation Layer):

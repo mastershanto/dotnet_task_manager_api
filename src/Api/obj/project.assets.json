@@ -2330,7 +2330,7 @@
     ]
   },
   "packageFolders": {
-    "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/": {}
+    "/Users/masterShanto/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2338,11 +2338,11 @@
       "projectUniqueName": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj",
       "projectName": "Api",
       "projectPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/Api.csproj",
-      "packagesPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/packages/",
+      "packagesPath": "/Users/masterShanto/.nuget/packages/",
       "outputPath": "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/src/Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/masterShanto/developments/c#_development/dotnet_task_manager_api/.tmp/.nuget/NuGet/NuGet.Config"
+        "/Users/masterShanto/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

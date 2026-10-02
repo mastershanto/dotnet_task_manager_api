@@ -5,6 +5,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <ItemGroup>
+    <Using Include="Auth.Application.Models" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="../domain/Auth.Domain.csproj" />
     <ProjectReference Include="../../user_data/domain/Users.Domain.csproj" />
     <ProjectReference Include="../../../BuildingBlocks/Abstractions/BuildingBlocks.Abstractions.csproj" />
