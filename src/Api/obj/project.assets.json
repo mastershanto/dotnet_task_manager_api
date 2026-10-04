@@ -913,6 +913,66 @@
           "bin/placeholder/Products.Infrastructure.dll": {}
         }
       },
+      "Profile.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Profile.Application": "1.0.0",
+          "Profile.Domain": "1.0.0",
+          "Profile.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Profile.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profile.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Profile.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Profile.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Profile.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profile.Application.dll": {}
+        }
+      },
+      "Profile.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Profile.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profile.Domain.dll": {}
+        }
+      },
+      "Profile.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Profile.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Profile.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Profile.Infrastructure.dll": {}
+        }
+      },
       "Projects.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -2286,6 +2346,26 @@
       "path": "../modules/product/data/Products.Infrastructure.csproj",
       "msbuildProject": "../modules/product/data/Products.Infrastructure.csproj"
     },
+    "Profile.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/profile/presentation/Profile.Api.csproj",
+      "msbuildProject": "../modules/profile/presentation/Profile.Api.csproj"
+    },
+    "Profile.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/profile/application/Profile.Application.csproj",
+      "msbuildProject": "../modules/profile/application/Profile.Application.csproj"
+    },
+    "Profile.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/profile/domain/Profile.Domain.csproj",
+      "msbuildProject": "../modules/profile/domain/Profile.Domain.csproj"
+    },
+    "Profile.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/profile/data/Profile.Infrastructure.csproj",
+      "msbuildProject": "../modules/profile/data/Profile.Infrastructure.csproj"
+    },
     "Projects.Api/1.0.0": {
       "type": "project",
       "path": "../modules/project/presentation/Projects.Api.csproj",
@@ -2390,6 +2470,7 @@
       "Payments.Infrastructure >= 1.0.0",
       "Products.Api >= 1.0.0",
       "Products.Infrastructure >= 1.0.0",
+      "Profile.Api >= 1.0.0",
       "Projects.Api >= 1.0.0",
       "Projects.Application >= 1.0.0",
       "Projects.Infrastructure >= 1.0.0",
@@ -2470,6 +2551,9 @@
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\presentation\\Products.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\profile\\presentation\\Profile.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\profile\\presentation\\Profile.Api.csproj"
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj"

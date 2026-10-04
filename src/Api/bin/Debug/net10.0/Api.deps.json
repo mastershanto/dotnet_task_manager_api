@@ -29,6 +29,7 @@
           "Payments.Infrastructure": "1.0.0",
           "Products.Api": "1.0.0",
           "Products.Infrastructure": "1.0.0",
+          "Profile.Api": "1.0.0",
           "Projects.Api": "1.0.0",
           "Projects.Application": "1.0.0",
           "Projects.Infrastructure": "1.0.0",
@@ -676,6 +677,55 @@
           }
         }
       },
+      "Profile.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Profile.Application": "1.0.0",
+          "Profile.Domain": "1.0.0",
+          "Profile.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Profile.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Profile.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Profile.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Profile.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Profile.Domain/1.0.0": {
+        "runtime": {
+          "Profile.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Profile.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Profile.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Profile.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Projects.Api/1.0.0": {
         "dependencies": {
           "BuildingBlocks.Abstractions": "1.0.0",
@@ -1236,6 +1286,26 @@
       "sha512": ""
     },
     "Products.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Profile.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Profile.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Profile.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Profile.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
