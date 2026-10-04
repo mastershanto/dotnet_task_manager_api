@@ -14,6 +14,8 @@ using SystemSettings.Presentation;
 using Profile.Presentation;
 using LessonLogs.Presentation;
 using InstructorClasses.Presentation;
+using InstructorSyllabus.Presentation;
+using InstructorCalendar.Presentation;
 
 namespace Api.Configuration;
 
@@ -56,7 +58,8 @@ public static class DependencyInjection
         services.AddProfileModule(configuration);
         services.AddLessonLogsModule(configuration);
         services.AddInstructorClassesModule(configuration);
-
+        services.AddInstructorSyllabusModule(configuration);
+        services.AddInstructorCalendarModule(configuration);
         return services;
     }
 }

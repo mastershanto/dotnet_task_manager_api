@@ -16,6 +16,9 @@
           "BuildingBlocks.Web": "1.0.0",
           "Categories.Api": "1.0.0",
           "Categories.Infrastructure": "1.0.0",
+          "InstructorCalendar.Api": "1.0.0",
+          "InstructorClasses.Api": "1.0.0",
+          "InstructorSyllabus.Api": "1.0.0",
           "LessonLogs.Api": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
@@ -572,6 +575,153 @@
         },
         "runtime": {
           "Categories.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorCalendar.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "InstructorCalendar.Application": "1.0.0",
+          "InstructorCalendar.Domain": "1.0.0",
+          "InstructorCalendar.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "runtime": {
+          "InstructorCalendar.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorCalendar.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "InstructorCalendar.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InstructorCalendar.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorCalendar.Domain/1.0.0": {
+        "runtime": {
+          "InstructorCalendar.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorCalendar.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "InstructorCalendar.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InstructorCalendar.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorClasses.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "InstructorClasses.Application": "1.0.0",
+          "InstructorClasses.Domain": "1.0.0",
+          "InstructorClasses.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "runtime": {
+          "InstructorClasses.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorClasses.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "InstructorClasses.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InstructorClasses.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorClasses.Domain/1.0.0": {
+        "runtime": {
+          "InstructorClasses.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorClasses.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "InstructorClasses.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InstructorClasses.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorSyllabus.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "InstructorSyllabus.Application": "1.0.0",
+          "InstructorSyllabus.Domain": "1.0.0",
+          "InstructorSyllabus.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "runtime": {
+          "InstructorSyllabus.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorSyllabus.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "InstructorSyllabus.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InstructorSyllabus.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorSyllabus.Domain/1.0.0": {
+        "runtime": {
+          "InstructorSyllabus.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "InstructorSyllabus.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "InstructorSyllabus.Domain": "1.0.0"
+        },
+        "runtime": {
+          "InstructorSyllabus.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1296,6 +1446,66 @@
       "sha512": ""
     },
     "Categories.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorCalendar.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorCalendar.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorCalendar.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorCalendar.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorClasses.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorClasses.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorClasses.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorClasses.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorSyllabus.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorSyllabus.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorSyllabus.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "InstructorSyllabus.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

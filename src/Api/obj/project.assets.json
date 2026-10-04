@@ -790,6 +790,186 @@
           "bin/placeholder/Categories.Infrastructure.dll": {}
         }
       },
+      "InstructorCalendar.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "InstructorCalendar.Application": "1.0.0",
+          "InstructorCalendar.Domain": "1.0.0",
+          "InstructorCalendar.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/InstructorCalendar.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorCalendar.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "InstructorCalendar.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "InstructorCalendar.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InstructorCalendar.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorCalendar.Application.dll": {}
+        }
+      },
+      "InstructorCalendar.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/InstructorCalendar.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorCalendar.Domain.dll": {}
+        }
+      },
+      "InstructorCalendar.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "InstructorCalendar.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InstructorCalendar.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorCalendar.Infrastructure.dll": {}
+        }
+      },
+      "InstructorClasses.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "InstructorClasses.Application": "1.0.0",
+          "InstructorClasses.Domain": "1.0.0",
+          "InstructorClasses.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/InstructorClasses.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorClasses.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "InstructorClasses.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "InstructorClasses.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InstructorClasses.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorClasses.Application.dll": {}
+        }
+      },
+      "InstructorClasses.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/InstructorClasses.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorClasses.Domain.dll": {}
+        }
+      },
+      "InstructorClasses.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "InstructorClasses.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InstructorClasses.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorClasses.Infrastructure.dll": {}
+        }
+      },
+      "InstructorSyllabus.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "InstructorSyllabus.Application": "1.0.0",
+          "InstructorSyllabus.Domain": "1.0.0",
+          "InstructorSyllabus.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/InstructorSyllabus.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorSyllabus.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "InstructorSyllabus.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "InstructorSyllabus.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InstructorSyllabus.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorSyllabus.Application.dll": {}
+        }
+      },
+      "InstructorSyllabus.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/InstructorSyllabus.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorSyllabus.Domain.dll": {}
+        }
+      },
+      "InstructorSyllabus.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "InstructorSyllabus.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InstructorSyllabus.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InstructorSyllabus.Infrastructure.dll": {}
+        }
+      },
       "LessonLogs.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -2366,6 +2546,66 @@
       "path": "../modules/category/data/Categories.Infrastructure.csproj",
       "msbuildProject": "../modules/category/data/Categories.Infrastructure.csproj"
     },
+    "InstructorCalendar.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_calendar/presentation/InstructorCalendar.Api.csproj",
+      "msbuildProject": "../modules/instructor_calendar/presentation/InstructorCalendar.Api.csproj"
+    },
+    "InstructorCalendar.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_calendar/application/InstructorCalendar.Application.csproj",
+      "msbuildProject": "../modules/instructor_calendar/application/InstructorCalendar.Application.csproj"
+    },
+    "InstructorCalendar.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_calendar/domain/InstructorCalendar.Domain.csproj",
+      "msbuildProject": "../modules/instructor_calendar/domain/InstructorCalendar.Domain.csproj"
+    },
+    "InstructorCalendar.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_calendar/data/InstructorCalendar.Infrastructure.csproj",
+      "msbuildProject": "../modules/instructor_calendar/data/InstructorCalendar.Infrastructure.csproj"
+    },
+    "InstructorClasses.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_classes/presentation/InstructorClasses.Api.csproj",
+      "msbuildProject": "../modules/instructor_classes/presentation/InstructorClasses.Api.csproj"
+    },
+    "InstructorClasses.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_classes/application/InstructorClasses.Application.csproj",
+      "msbuildProject": "../modules/instructor_classes/application/InstructorClasses.Application.csproj"
+    },
+    "InstructorClasses.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_classes/domain/InstructorClasses.Domain.csproj",
+      "msbuildProject": "../modules/instructor_classes/domain/InstructorClasses.Domain.csproj"
+    },
+    "InstructorClasses.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_classes/data/InstructorClasses.Infrastructure.csproj",
+      "msbuildProject": "../modules/instructor_classes/data/InstructorClasses.Infrastructure.csproj"
+    },
+    "InstructorSyllabus.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_syllabus/presentation/InstructorSyllabus.Api.csproj",
+      "msbuildProject": "../modules/instructor_syllabus/presentation/InstructorSyllabus.Api.csproj"
+    },
+    "InstructorSyllabus.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_syllabus/application/InstructorSyllabus.Application.csproj",
+      "msbuildProject": "../modules/instructor_syllabus/application/InstructorSyllabus.Application.csproj"
+    },
+    "InstructorSyllabus.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_syllabus/domain/InstructorSyllabus.Domain.csproj",
+      "msbuildProject": "../modules/instructor_syllabus/domain/InstructorSyllabus.Domain.csproj"
+    },
+    "InstructorSyllabus.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/instructor_syllabus/data/InstructorSyllabus.Infrastructure.csproj",
+      "msbuildProject": "../modules/instructor_syllabus/data/InstructorSyllabus.Infrastructure.csproj"
+    },
     "LessonLogs.Api/1.0.0": {
       "type": "project",
       "path": "../modules/lesson_logs/presentation/LessonLogs.Api.csproj",
@@ -2537,6 +2777,9 @@
       "BuildingBlocks.Web >= 1.0.0",
       "Categories.Api >= 1.0.0",
       "Categories.Infrastructure >= 1.0.0",
+      "InstructorCalendar.Api >= 1.0.0",
+      "InstructorClasses.Api >= 1.0.0",
+      "InstructorSyllabus.Api >= 1.0.0",
       "LessonLogs.Api >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.5",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
@@ -2620,6 +2863,15 @@
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\instructor_calendar\\presentation\\InstructorCalendar.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\instructor_calendar\\presentation\\InstructorCalendar.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\instructor_classes\\presentation\\InstructorClasses.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\instructor_classes\\presentation\\InstructorClasses.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\instructor_syllabus\\presentation\\InstructorSyllabus.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\instructor_syllabus\\presentation\\InstructorSyllabus.Api.csproj"
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\lesson_logs\\presentation\\LessonLogs.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\lesson_logs\\presentation\\LessonLogs.Api.csproj"

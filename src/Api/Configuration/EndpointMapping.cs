@@ -9,6 +9,8 @@ using SystemSettings.Presentation;
 using Profile.Presentation;
 using LessonLogs.Presentation;
 using InstructorClasses.Presentation;
+using InstructorSyllabus.Presentation;
+using InstructorCalendar.Presentation;
 
 namespace Api.Configuration;
 
@@ -27,6 +29,8 @@ public static class EndpointMapping
         app.MapProfileEndpoints();
         app.MapLessonLogsEndpoints();
         app.MapInstructorClassesEndpoints();
+        app.MapInstructorSyllabusEndpoints();
+        app.MapInstructorCalendarEndpoints();
 
         return app;
     }
