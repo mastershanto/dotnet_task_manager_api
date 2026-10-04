@@ -33,6 +33,7 @@
           "Projects.Application": "1.0.0",
           "Projects.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "10.1.7",
+          "SystemSettings.Api": "1.0.0",
           "Tasks.Api": "1.0.0",
           "Tasks.Application": "1.0.0",
           "Tasks.Infrastructure": "1.0.0",
@@ -724,6 +725,55 @@
           }
         }
       },
+      "SystemSettings.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "SystemSettings.Application": "1.0.0",
+          "SystemSettings.Domain": "1.0.0",
+          "SystemSettings.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "SystemSettings.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SystemSettings.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "SystemSettings.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SystemSettings.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SystemSettings.Domain/1.0.0": {
+        "runtime": {
+          "SystemSettings.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SystemSettings.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "SystemSettings.Domain": "1.0.0"
+        },
+        "runtime": {
+          "SystemSettings.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Tasks.Api/1.0.0": {
         "dependencies": {
           "BuildingBlocks.Abstractions": "1.0.0",
@@ -1206,6 +1256,26 @@
       "sha512": ""
     },
     "Projects.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SystemSettings.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SystemSettings.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SystemSettings.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SystemSettings.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

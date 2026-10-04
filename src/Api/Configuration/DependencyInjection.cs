@@ -10,6 +10,8 @@ using Products.Presentation;
 using Projects.Presentation;
 using Tasks.Presentation;
 using Users.Presentation;
+using SystemSettings.Presentation;
+using Profile.Presentation;
 
 namespace Api.Configuration;
 
@@ -48,6 +50,8 @@ public static class DependencyInjection
         services.AddPaymentsModule(configuration);
         services.AddTasksModule(configuration);
         services.AddProjectsModule(configuration);
+        services.AddSystemSettingsModule(configuration);
+        services.AddProfileModule(configuration);
 
         return services;
     }

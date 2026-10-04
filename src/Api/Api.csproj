@@ -28,6 +28,8 @@
     <ProjectReference Include="../modules/user_data/presentation/Users.Api.csproj" />
     <ProjectReference Include="../modules/task/presentation/Tasks.Api.csproj" />
     <ProjectReference Include="../modules/project/presentation/Projects.Api.csproj" />
+    <ProjectReference Include="../modules/system_settings/presentation/SystemSettings.Api.csproj" />
+    <ProjectReference Include="../modules/profile/presentation/Profile.Api.csproj" />
 
     <!-- Module Infrastructure Layer References -->
     <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />

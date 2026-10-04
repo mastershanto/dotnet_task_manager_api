@@ -5,6 +5,7 @@ using Products.Presentation;
 using Projects.Presentation;
 using Tasks.Presentation;
 using Users.Presentation;
+using SystemSettings.Presentation;
 
 namespace Api.Configuration;
 
@@ -19,6 +20,7 @@ public static class EndpointMapping
         app.MapPaymentEndpoints();
         app.MapTaskEndpoints();
         app.MapProjectEndpoints();
+        app.MapSystemSettingsEndpoints();
 
         return app;
     }
