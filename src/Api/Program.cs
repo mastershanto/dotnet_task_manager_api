@@ -40,14 +40,11 @@ app.UseHttpLogging();
 app.UseAuthentication();
 app.UseAuthorization();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Task Manager API v1");
-    });
-}
+    options.SwaggerEndpoint("/swagger/v1/swagger.json", "Task Manager API v1");
+});
 
 app.MapGet("/", () => Results.Redirect("/swagger")).ExcludeFromDescription();
 

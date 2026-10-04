@@ -11,7 +11,6 @@ RUN addgroup -g 1000 appgroup && \
     chown -R appuser:appgroup /app
 
 EXPOSE 8080
-EXPOSE 8081
 
 ENV ASPNETCORE_URLS=http://+:8080 \
     ASPNETCORE_ENVIRONMENT=Production \
@@ -20,14 +19,13 @@ ENV ASPNETCORE_URLS=http://+:8080 \
 FROM mcr.microsoft.com/dotnet/sdk:10.0-alpine AS build
 WORKDIR /src
 
-COPY ["src/Api/Api.csproj", "src/Api/"]
-RUN dotnet restore "src/Api/Api.csproj" --runtime linux-musl-x64
-
+# Copy all source files and restore solution
 COPY . .
+RUN dotnet restore "dotnet_task_manager_api.sln"
+
 RUN dotnet publish "src/Api/Api.csproj" \
     -c Release \
     -o /app/publish \
-    --runtime linux-musl-x64 \
     --self-contained false \
     /p:UseAppHost=false
 

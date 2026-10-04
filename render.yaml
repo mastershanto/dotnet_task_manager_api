@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: sunset-dance-api
+    runtime: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health/live
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: Persistence__Provider
+        value: InMemory
+      - key: Jwt__SigningKey
+        value: this-is-a-production-signing-key-32-chars-long-secret-key!
+      - key: Jwt__Issuer
+        value: SunsetDance.Api
+      - key: Jwt__Audience
+        value: SunsetDance.Client
