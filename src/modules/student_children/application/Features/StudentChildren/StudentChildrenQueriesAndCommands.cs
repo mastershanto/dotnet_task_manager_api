@@ -1,5 +1,5 @@
-using BuildingBlocks.Abstractions.CQRS;
-using BuildingBlocks.Abstractions.Results;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.CQRS;
 using StudentChildren.Domain;
 
 namespace StudentChildren.Application.Features.StudentChildren;

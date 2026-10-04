@@ -1,5 +1,5 @@
-using BuildingBlocks.Abstractions.CQRS;
-using BuildingBlocks.Abstractions.Results;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.CQRS;
 using Progress.Domain;
 
 namespace Progress.Application.Features.Progress;

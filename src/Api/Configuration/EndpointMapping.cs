@@ -11,6 +11,13 @@ using LessonLogs.Presentation;
 using InstructorClasses.Presentation;
 using InstructorSyllabus.Presentation;
 using InstructorCalendar.Presentation;
+using StudentGroupClasses.Presentation;
+using StudentChildren.Presentation;
+using StudentEvents.Presentation;
+using PrivateStudent.Presentation;
+using Progress.Presentation;
+using Notifications.Presentation;
+using Renter.Presentation;
 
 namespace Api.Configuration;
 
@@ -31,6 +38,13 @@ public static class EndpointMapping
         app.MapInstructorClassesEndpoints();
         app.MapInstructorSyllabusEndpoints();
         app.MapInstructorCalendarEndpoints();
+        app.MapStudentGroupClassesEndpoints();
+        app.MapStudentChildrenEndpoints();
+        app.MapStudentEventsEndpoints();
+        app.MapPrivateStudentEndpoints();
+        app.MapProgressEndpoints();
+        app.MapNotificationsEndpoints();
+        app.MapRenterEndpoints();
 
         return app;
     }

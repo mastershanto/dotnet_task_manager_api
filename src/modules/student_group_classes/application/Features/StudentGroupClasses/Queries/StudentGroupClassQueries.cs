@@ -1,5 +1,5 @@
-using BuildingBlocks.Abstractions.CQRS;
-using BuildingBlocks.Abstractions.Results;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.CQRS;
 using StudentGroupClasses.Domain;
 
 namespace StudentGroupClasses.Application.Features.StudentGroupClasses.Queries;

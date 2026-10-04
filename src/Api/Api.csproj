@@ -34,6 +34,13 @@
     <ProjectReference Include="../modules/instructor_classes/presentation/InstructorClasses.Api.csproj" />
     <ProjectReference Include="../modules/instructor_syllabus/presentation/InstructorSyllabus.Api.csproj" />
     <ProjectReference Include="../modules/instructor_calendar/presentation/InstructorCalendar.Api.csproj" />
+    <ProjectReference Include="../modules/student_group_classes/presentation/StudentGroupClasses.Api.csproj" />
+    <ProjectReference Include="../modules/student_children/presentation/StudentChildren.Api.csproj" />
+    <ProjectReference Include="../modules/student_events/presentation/StudentEvents.Api.csproj" />
+    <ProjectReference Include="../modules/private_student/presentation/PrivateStudent.Api.csproj" />
+    <ProjectReference Include="../modules/progress/presentation/Progress.Api.csproj" />
+    <ProjectReference Include="../modules/notifications/presentation/Notifications.Api.csproj" />
+    <ProjectReference Include="../modules/renter/presentation/Renter.Api.csproj" />
 
     <!-- Module Infrastructure Layer References -->
     <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />

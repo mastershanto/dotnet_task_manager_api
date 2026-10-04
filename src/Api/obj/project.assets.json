@@ -1030,6 +1030,66 @@
           "bin/placeholder/LessonLogs.Infrastructure.dll": {}
         }
       },
+      "Notifications.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Notifications.Application": "1.0.0",
+          "Notifications.Domain": "1.0.0",
+          "Notifications.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Notifications.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notifications.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Notifications.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Notifications.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Notifications.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notifications.Application.dll": {}
+        }
+      },
+      "Notifications.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Notifications.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notifications.Domain.dll": {}
+        }
+      },
+      "Notifications.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Notifications.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Notifications.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Notifications.Infrastructure.dll": {}
+        }
+      },
       "Payments.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1090,6 +1150,66 @@
         },
         "runtime": {
           "bin/placeholder/Payments.Infrastructure.dll": {}
+        }
+      },
+      "PrivateStudent.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "PrivateStudent.Application": "1.0.0",
+          "PrivateStudent.Domain": "1.0.0",
+          "PrivateStudent.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PrivateStudent.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrivateStudent.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "PrivateStudent.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "PrivateStudent.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PrivateStudent.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrivateStudent.Application.dll": {}
+        }
+      },
+      "PrivateStudent.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/PrivateStudent.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrivateStudent.Domain.dll": {}
+        }
+      },
+      "PrivateStudent.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "PrivateStudent.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PrivateStudent.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PrivateStudent.Infrastructure.dll": {}
         }
       },
       "Products.Api/1.0.0": {
@@ -1213,6 +1333,66 @@
           "bin/placeholder/Profile.Infrastructure.dll": {}
         }
       },
+      "Progress.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Progress.Application": "1.0.0",
+          "Progress.Domain": "1.0.0",
+          "Progress.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Progress.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Progress.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Progress.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Progress.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Progress.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Progress.Application.dll": {}
+        }
+      },
+      "Progress.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Progress.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Progress.Domain.dll": {}
+        }
+      },
+      "Progress.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Progress.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Progress.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Progress.Infrastructure.dll": {}
+        }
+      },
       "Projects.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -1271,6 +1451,246 @@
         },
         "runtime": {
           "bin/placeholder/Projects.Infrastructure.dll": {}
+        }
+      },
+      "Renter.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Renter.Application": "1.0.0",
+          "Renter.Domain": "1.0.0",
+          "Renter.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Renter.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Renter.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Renter.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Renter.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Renter.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Renter.Application.dll": {}
+        }
+      },
+      "Renter.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/Renter.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Renter.Domain.dll": {}
+        }
+      },
+      "Renter.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Renter.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Renter.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Renter.Infrastructure.dll": {}
+        }
+      },
+      "StudentChildren.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "StudentChildren.Application": "1.0.0",
+          "StudentChildren.Domain": "1.0.0",
+          "StudentChildren.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentChildren.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentChildren.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "StudentChildren.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "StudentChildren.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentChildren.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentChildren.Application.dll": {}
+        }
+      },
+      "StudentChildren.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StudentChildren.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentChildren.Domain.dll": {}
+        }
+      },
+      "StudentChildren.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "StudentChildren.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentChildren.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentChildren.Infrastructure.dll": {}
+        }
+      },
+      "StudentEvents.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "StudentEvents.Application": "1.0.0",
+          "StudentEvents.Domain": "1.0.0",
+          "StudentEvents.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentEvents.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentEvents.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "StudentEvents.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "StudentEvents.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentEvents.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentEvents.Application.dll": {}
+        }
+      },
+      "StudentEvents.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StudentEvents.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentEvents.Domain.dll": {}
+        }
+      },
+      "StudentEvents.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "StudentEvents.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentEvents.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentEvents.Infrastructure.dll": {}
+        }
+      },
+      "StudentGroupClasses.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "StudentGroupClasses.Application": "1.0.0",
+          "StudentGroupClasses.Domain": "1.0.0",
+          "StudentGroupClasses.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentGroupClasses.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentGroupClasses.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "StudentGroupClasses.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "StudentGroupClasses.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentGroupClasses.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentGroupClasses.Application.dll": {}
+        }
+      },
+      "StudentGroupClasses.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/StudentGroupClasses.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentGroupClasses.Domain.dll": {}
+        }
+      },
+      "StudentGroupClasses.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "StudentGroupClasses.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudentGroupClasses.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudentGroupClasses.Infrastructure.dll": {}
         }
       },
       "SystemSettings.Api/1.0.0": {
@@ -2626,6 +3046,26 @@
       "path": "../modules/lesson_logs/data/LessonLogs.Infrastructure.csproj",
       "msbuildProject": "../modules/lesson_logs/data/LessonLogs.Infrastructure.csproj"
     },
+    "Notifications.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/notifications/presentation/Notifications.Api.csproj",
+      "msbuildProject": "../modules/notifications/presentation/Notifications.Api.csproj"
+    },
+    "Notifications.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/notifications/application/Notifications.Application.csproj",
+      "msbuildProject": "../modules/notifications/application/Notifications.Application.csproj"
+    },
+    "Notifications.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/notifications/domain/Notifications.Domain.csproj",
+      "msbuildProject": "../modules/notifications/domain/Notifications.Domain.csproj"
+    },
+    "Notifications.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/notifications/data/Notifications.Infrastructure.csproj",
+      "msbuildProject": "../modules/notifications/data/Notifications.Infrastructure.csproj"
+    },
     "Payments.Api/1.0.0": {
       "type": "project",
       "path": "../modules/payment/presentation/Payments.Api.csproj",
@@ -2645,6 +3085,26 @@
       "type": "project",
       "path": "../modules/payment/data/Payments.Infrastructure.csproj",
       "msbuildProject": "../modules/payment/data/Payments.Infrastructure.csproj"
+    },
+    "PrivateStudent.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/private_student/presentation/PrivateStudent.Api.csproj",
+      "msbuildProject": "../modules/private_student/presentation/PrivateStudent.Api.csproj"
+    },
+    "PrivateStudent.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/private_student/application/PrivateStudent.Application.csproj",
+      "msbuildProject": "../modules/private_student/application/PrivateStudent.Application.csproj"
+    },
+    "PrivateStudent.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/private_student/domain/PrivateStudent.Domain.csproj",
+      "msbuildProject": "../modules/private_student/domain/PrivateStudent.Domain.csproj"
+    },
+    "PrivateStudent.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/private_student/data/PrivateStudent.Infrastructure.csproj",
+      "msbuildProject": "../modules/private_student/data/PrivateStudent.Infrastructure.csproj"
     },
     "Products.Api/1.0.0": {
       "type": "project",
@@ -2686,6 +3146,26 @@
       "path": "../modules/profile/data/Profile.Infrastructure.csproj",
       "msbuildProject": "../modules/profile/data/Profile.Infrastructure.csproj"
     },
+    "Progress.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/progress/presentation/Progress.Api.csproj",
+      "msbuildProject": "../modules/progress/presentation/Progress.Api.csproj"
+    },
+    "Progress.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/progress/application/Progress.Application.csproj",
+      "msbuildProject": "../modules/progress/application/Progress.Application.csproj"
+    },
+    "Progress.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/progress/domain/Progress.Domain.csproj",
+      "msbuildProject": "../modules/progress/domain/Progress.Domain.csproj"
+    },
+    "Progress.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/progress/data/Progress.Infrastructure.csproj",
+      "msbuildProject": "../modules/progress/data/Progress.Infrastructure.csproj"
+    },
     "Projects.Api/1.0.0": {
       "type": "project",
       "path": "../modules/project/presentation/Projects.Api.csproj",
@@ -2705,6 +3185,86 @@
       "type": "project",
       "path": "../modules/project/data/Projects.Infrastructure.csproj",
       "msbuildProject": "../modules/project/data/Projects.Infrastructure.csproj"
+    },
+    "Renter.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/renter/presentation/Renter.Api.csproj",
+      "msbuildProject": "../modules/renter/presentation/Renter.Api.csproj"
+    },
+    "Renter.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/renter/application/Renter.Application.csproj",
+      "msbuildProject": "../modules/renter/application/Renter.Application.csproj"
+    },
+    "Renter.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/renter/domain/Renter.Domain.csproj",
+      "msbuildProject": "../modules/renter/domain/Renter.Domain.csproj"
+    },
+    "Renter.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/renter/data/Renter.Infrastructure.csproj",
+      "msbuildProject": "../modules/renter/data/Renter.Infrastructure.csproj"
+    },
+    "StudentChildren.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_children/presentation/StudentChildren.Api.csproj",
+      "msbuildProject": "../modules/student_children/presentation/StudentChildren.Api.csproj"
+    },
+    "StudentChildren.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_children/application/StudentChildren.Application.csproj",
+      "msbuildProject": "../modules/student_children/application/StudentChildren.Application.csproj"
+    },
+    "StudentChildren.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_children/domain/StudentChildren.Domain.csproj",
+      "msbuildProject": "../modules/student_children/domain/StudentChildren.Domain.csproj"
+    },
+    "StudentChildren.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_children/data/StudentChildren.Infrastructure.csproj",
+      "msbuildProject": "../modules/student_children/data/StudentChildren.Infrastructure.csproj"
+    },
+    "StudentEvents.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_events/presentation/StudentEvents.Api.csproj",
+      "msbuildProject": "../modules/student_events/presentation/StudentEvents.Api.csproj"
+    },
+    "StudentEvents.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_events/application/StudentEvents.Application.csproj",
+      "msbuildProject": "../modules/student_events/application/StudentEvents.Application.csproj"
+    },
+    "StudentEvents.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_events/domain/StudentEvents.Domain.csproj",
+      "msbuildProject": "../modules/student_events/domain/StudentEvents.Domain.csproj"
+    },
+    "StudentEvents.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_events/data/StudentEvents.Infrastructure.csproj",
+      "msbuildProject": "../modules/student_events/data/StudentEvents.Infrastructure.csproj"
+    },
+    "StudentGroupClasses.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_group_classes/presentation/StudentGroupClasses.Api.csproj",
+      "msbuildProject": "../modules/student_group_classes/presentation/StudentGroupClasses.Api.csproj"
+    },
+    "StudentGroupClasses.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_group_classes/application/StudentGroupClasses.Application.csproj",
+      "msbuildProject": "../modules/student_group_classes/application/StudentGroupClasses.Application.csproj"
+    },
+    "StudentGroupClasses.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_group_classes/domain/StudentGroupClasses.Domain.csproj",
+      "msbuildProject": "../modules/student_group_classes/domain/StudentGroupClasses.Domain.csproj"
+    },
+    "StudentGroupClasses.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/student_group_classes/data/StudentGroupClasses.Infrastructure.csproj",
+      "msbuildProject": "../modules/student_group_classes/data/StudentGroupClasses.Infrastructure.csproj"
     },
     "SystemSettings.Api/1.0.0": {
       "type": "project",
@@ -2783,6 +3343,7 @@
       "LessonLogs.Api >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.5",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
+      "Notifications.Api >= 1.0.0",
       "Npgsql >= 10.0.0",
       "OpenTelemetry.Exporter.Console >= 1.9.0",
       "OpenTelemetry.Exporter.OpenTelemetryProtocol >= 1.9.0",
@@ -2792,12 +3353,18 @@
       "OpenTelemetry.Instrumentation.Runtime >= 1.9.0",
       "Payments.Api >= 1.0.0",
       "Payments.Infrastructure >= 1.0.0",
+      "PrivateStudent.Api >= 1.0.0",
       "Products.Api >= 1.0.0",
       "Products.Infrastructure >= 1.0.0",
       "Profile.Api >= 1.0.0",
+      "Progress.Api >= 1.0.0",
       "Projects.Api >= 1.0.0",
       "Projects.Application >= 1.0.0",
       "Projects.Infrastructure >= 1.0.0",
+      "Renter.Api >= 1.0.0",
+      "StudentChildren.Api >= 1.0.0",
+      "StudentEvents.Api >= 1.0.0",
+      "StudentGroupClasses.Api >= 1.0.0",
       "Swashbuckle.AspNetCore >= 10.1.7",
       "SystemSettings.Api >= 1.0.0",
       "Tasks.Api >= 1.0.0",
@@ -2876,11 +3443,17 @@
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\lesson_logs\\presentation\\LessonLogs.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\lesson_logs\\presentation\\LessonLogs.Api.csproj"
             },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\notifications\\presentation\\Notifications.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\notifications\\presentation\\Notifications.Api.csproj"
+            },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj"
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\presentation\\Payments.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\private_student\\presentation\\PrivateStudent.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\private_student\\presentation\\PrivateStudent.Api.csproj"
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\product\\data\\Products.Infrastructure.csproj"
@@ -2891,6 +3464,9 @@
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\profile\\presentation\\Profile.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\profile\\presentation\\Profile.Api.csproj"
             },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\progress\\presentation\\Progress.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\progress\\presentation\\Progress.Api.csproj"
+            },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\application\\Projects.Application.csproj"
             },
@@ -2899,6 +3475,18 @@
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\project\\presentation\\Projects.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\renter\\presentation\\Renter.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\renter\\presentation\\Renter.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\student_children\\presentation\\StudentChildren.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\student_children\\presentation\\StudentChildren.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\student_events\\presentation\\StudentEvents.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\student_events\\presentation\\StudentEvents.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\student_group_classes\\presentation\\StudentGroupClasses.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\student_group_classes\\presentation\\StudentGroupClasses.Api.csproj"
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\system_settings\\presentation\\SystemSettings.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\system_settings\\presentation\\SystemSettings.Api.csproj"

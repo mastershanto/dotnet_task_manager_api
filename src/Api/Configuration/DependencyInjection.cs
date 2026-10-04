@@ -16,6 +16,13 @@ using LessonLogs.Presentation;
 using InstructorClasses.Presentation;
 using InstructorSyllabus.Presentation;
 using InstructorCalendar.Presentation;
+using StudentGroupClasses.Presentation;
+using StudentChildren.Presentation;
+using StudentEvents.Presentation;
+using PrivateStudent.Presentation;
+using Progress.Presentation;
+using Notifications.Presentation;
+using Renter.Presentation;
 
 namespace Api.Configuration;
 
@@ -60,6 +67,13 @@ public static class DependencyInjection
         services.AddInstructorClassesModule(configuration);
         services.AddInstructorSyllabusModule(configuration);
         services.AddInstructorCalendarModule(configuration);
+        services.AddStudentGroupClassesModule(configuration);
+        services.AddStudentChildrenModule(configuration);
+        services.AddStudentEventsModule(configuration);
+        services.AddPrivateStudentModule(configuration);
+        services.AddProgressModule(configuration);
+        services.AddNotificationsModule(configuration);
+        services.AddRenterModule(configuration);
         return services;
     }
 }

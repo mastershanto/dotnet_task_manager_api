@@ -22,6 +22,7 @@
           "LessonLogs.Api": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
           "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Notifications.Api": "1.0.0",
           "Npgsql": "10.0.0",
           "OpenTelemetry.Exporter.Console": "1.9.0",
           "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.9.0",
@@ -31,12 +32,18 @@
           "OpenTelemetry.Instrumentation.Runtime": "1.9.0",
           "Payments.Api": "1.0.0",
           "Payments.Infrastructure": "1.0.0",
+          "PrivateStudent.Api": "1.0.0",
           "Products.Api": "1.0.0",
           "Products.Infrastructure": "1.0.0",
           "Profile.Api": "1.0.0",
+          "Progress.Api": "1.0.0",
           "Projects.Api": "1.0.0",
           "Projects.Application": "1.0.0",
           "Projects.Infrastructure": "1.0.0",
+          "Renter.Api": "1.0.0",
+          "StudentChildren.Api": "1.0.0",
+          "StudentEvents.Api": "1.0.0",
+          "StudentGroupClasses.Api": "1.0.0",
           "Swashbuckle.AspNetCore": "10.1.7",
           "SystemSettings.Api": "1.0.0",
           "Tasks.Api": "1.0.0",
@@ -776,6 +783,55 @@
           }
         }
       },
+      "Notifications.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Notifications.Application": "1.0.0",
+          "Notifications.Domain": "1.0.0",
+          "Notifications.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Notifications.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Notifications.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Notifications.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Notifications.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Notifications.Domain/1.0.0": {
+        "runtime": {
+          "Notifications.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Notifications.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Notifications.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Notifications.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Payments.Api/1.0.0": {
         "dependencies": {
           "BuildingBlocks.Abstractions": "1.0.0",
@@ -822,6 +878,55 @@
         },
         "runtime": {
           "Payments.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PrivateStudent.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "PrivateStudent.Application": "1.0.0",
+          "PrivateStudent.Domain": "1.0.0",
+          "PrivateStudent.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "PrivateStudent.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PrivateStudent.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "PrivateStudent.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PrivateStudent.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PrivateStudent.Domain/1.0.0": {
+        "runtime": {
+          "PrivateStudent.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PrivateStudent.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "PrivateStudent.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PrivateStudent.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -926,6 +1031,55 @@
           }
         }
       },
+      "Progress.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Progress.Application": "1.0.0",
+          "Progress.Domain": "1.0.0",
+          "Progress.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Progress.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Progress.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Progress.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Progress.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Progress.Domain/1.0.0": {
+        "runtime": {
+          "Progress.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Progress.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Progress.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Progress.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "Projects.Api/1.0.0": {
         "dependencies": {
           "BuildingBlocks.Abstractions": "1.0.0",
@@ -970,6 +1124,202 @@
         },
         "runtime": {
           "Projects.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Renter.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "Renter.Application": "1.0.0",
+          "Renter.Domain": "1.0.0",
+          "Renter.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "Renter.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Renter.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "Renter.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Renter.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Renter.Domain/1.0.0": {
+        "runtime": {
+          "Renter.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Renter.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "Renter.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Renter.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentChildren.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "StudentChildren.Application": "1.0.0",
+          "StudentChildren.Domain": "1.0.0",
+          "StudentChildren.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "StudentChildren.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentChildren.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "StudentChildren.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StudentChildren.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentChildren.Domain/1.0.0": {
+        "runtime": {
+          "StudentChildren.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentChildren.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "StudentChildren.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StudentChildren.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentEvents.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "StudentEvents.Application": "1.0.0",
+          "StudentEvents.Domain": "1.0.0",
+          "StudentEvents.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "StudentEvents.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentEvents.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "StudentEvents.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StudentEvents.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentEvents.Domain/1.0.0": {
+        "runtime": {
+          "StudentEvents.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentEvents.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "StudentEvents.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StudentEvents.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentGroupClasses.Api/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1",
+          "StudentGroupClasses.Application": "1.0.0",
+          "StudentGroupClasses.Domain": "1.0.0",
+          "StudentGroupClasses.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "StudentGroupClasses.Api.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentGroupClasses.Application/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "StudentGroupClasses.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StudentGroupClasses.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentGroupClasses.Domain/1.0.0": {
+        "runtime": {
+          "StudentGroupClasses.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "StudentGroupClasses.Infrastructure/1.0.0": {
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "StudentGroupClasses.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StudentGroupClasses.Infrastructure.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1530,6 +1880,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Notifications.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notifications.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notifications.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Notifications.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Payments.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1546,6 +1916,26 @@
       "sha512": ""
     },
     "Payments.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrivateStudent.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrivateStudent.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrivateStudent.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PrivateStudent.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -1590,6 +1980,26 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Progress.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Progress.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Progress.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Progress.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Projects.Api/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -1606,6 +2016,86 @@
       "sha512": ""
     },
     "Projects.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Renter.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Renter.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Renter.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Renter.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentChildren.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentChildren.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentChildren.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentChildren.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentEvents.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentEvents.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentEvents.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentEvents.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentGroupClasses.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentGroupClasses.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentGroupClasses.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StudentGroupClasses.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
