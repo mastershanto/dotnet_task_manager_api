@@ -790,6 +790,66 @@
           "bin/placeholder/Categories.Infrastructure.dll": {}
         }
       },
+      "LessonLogs.Api/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "BuildingBlocks.Security": "1.0.0",
+          "LessonLogs.Application": "1.0.0",
+          "LessonLogs.Domain": "1.0.0",
+          "LessonLogs.Infrastructure": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "10.0.5",
+          "Microsoft.AspNetCore.OpenApi": "10.0.1"
+        },
+        "compile": {
+          "bin/placeholder/LessonLogs.Api.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LessonLogs.Api.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "LessonLogs.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Abstractions": "1.0.0",
+          "LessonLogs.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LessonLogs.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LessonLogs.Application.dll": {}
+        }
+      },
+      "LessonLogs.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/LessonLogs.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LessonLogs.Domain.dll": {}
+        }
+      },
+      "LessonLogs.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "BuildingBlocks.Persistence": "1.0.0",
+          "LessonLogs.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/LessonLogs.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LessonLogs.Infrastructure.dll": {}
+        }
+      },
       "Payments.Api/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
@@ -2306,6 +2366,26 @@
       "path": "../modules/category/data/Categories.Infrastructure.csproj",
       "msbuildProject": "../modules/category/data/Categories.Infrastructure.csproj"
     },
+    "LessonLogs.Api/1.0.0": {
+      "type": "project",
+      "path": "../modules/lesson_logs/presentation/LessonLogs.Api.csproj",
+      "msbuildProject": "../modules/lesson_logs/presentation/LessonLogs.Api.csproj"
+    },
+    "LessonLogs.Application/1.0.0": {
+      "type": "project",
+      "path": "../modules/lesson_logs/application/LessonLogs.Application.csproj",
+      "msbuildProject": "../modules/lesson_logs/application/LessonLogs.Application.csproj"
+    },
+    "LessonLogs.Domain/1.0.0": {
+      "type": "project",
+      "path": "../modules/lesson_logs/domain/LessonLogs.Domain.csproj",
+      "msbuildProject": "../modules/lesson_logs/domain/LessonLogs.Domain.csproj"
+    },
+    "LessonLogs.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../modules/lesson_logs/data/LessonLogs.Infrastructure.csproj",
+      "msbuildProject": "../modules/lesson_logs/data/LessonLogs.Infrastructure.csproj"
+    },
     "Payments.Api/1.0.0": {
       "type": "project",
       "path": "../modules/payment/presentation/Payments.Api.csproj",
@@ -2457,6 +2537,7 @@
       "BuildingBlocks.Web >= 1.0.0",
       "Categories.Api >= 1.0.0",
       "Categories.Infrastructure >= 1.0.0",
+      "LessonLogs.Api >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 10.0.5",
       "Microsoft.AspNetCore.OpenApi >= 10.0.1",
       "Npgsql >= 10.0.0",
@@ -2539,6 +2620,9 @@
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\category\\presentation\\Categories.Api.csproj"
+            },
+            "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\lesson_logs\\presentation\\LessonLogs.Api.csproj": {
+              "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\lesson_logs\\presentation\\LessonLogs.Api.csproj"
             },
             "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj": {
               "projectPath": "C:\\ajijul_hoque_files\\2_structured_projects\\sunset_dence_project_files\\sunset_dance_manager\\src\\modules\\payment\\data\\Payments.Infrastructure.csproj"

@@ -12,6 +12,8 @@ using Tasks.Presentation;
 using Users.Presentation;
 using SystemSettings.Presentation;
 using Profile.Presentation;
+using LessonLogs.Presentation;
+using InstructorClasses.Presentation;
 
 namespace Api.Configuration;
 
@@ -52,6 +54,8 @@ public static class DependencyInjection
         services.AddProjectsModule(configuration);
         services.AddSystemSettingsModule(configuration);
         services.AddProfileModule(configuration);
+        services.AddLessonLogsModule(configuration);
+        services.AddInstructorClassesModule(configuration);
 
         return services;
     }

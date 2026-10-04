@@ -7,6 +7,8 @@ using Tasks.Presentation;
 using Users.Presentation;
 using SystemSettings.Presentation;
 using Profile.Presentation;
+using LessonLogs.Presentation;
+using InstructorClasses.Presentation;
 
 namespace Api.Configuration;
 
@@ -23,6 +25,8 @@ public static class EndpointMapping
         app.MapProjectEndpoints();
         app.MapSystemSettingsEndpoints();
         app.MapProfileEndpoints();
+        app.MapLessonLogsEndpoints();
+        app.MapInstructorClassesEndpoints();
 
         return app;
     }

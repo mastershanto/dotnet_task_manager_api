@@ -30,6 +30,8 @@
     <ProjectReference Include="../modules/project/presentation/Projects.Api.csproj" />
     <ProjectReference Include="../modules/system_settings/presentation/SystemSettings.Api.csproj" />
     <ProjectReference Include="../modules/profile/presentation/Profile.Api.csproj" />
+    <ProjectReference Include="../modules/lesson_logs/presentation/LessonLogs.Api.csproj" />
+    <ProjectReference Include="../modules/instructor_classes/presentation/InstructorClasses.Api.csproj" />
 
     <!-- Module Infrastructure Layer References -->
     <ProjectReference Include="../modules/auth/data/Auth.Infrastructure.csproj" />
