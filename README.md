@@ -1,6 +1,6 @@
 # Dotnet Task Manager API
 
-Production-oriented modular monolith built with ASP.NET Core Minimal APIs (.NET 10).
+Production-oriented modular monolith built with ASP.NET Core Minimal APIs (.NET 8).
 
 ## Architecture At A Glance
 
